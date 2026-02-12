@@ -1,0 +1,38 @@
+# Home Assistant Configuration
+# https://www.home-assistant.io/docs/configuration/
+
+homeassistant:
+  name: Home
+  unit_system: metric
+  currency: VND
+  country: VN
+  time_zone: Asia/Ho_Chi_Minh
+  latitude: 10.8231
+  longitude: 106.6297
+  elevation: 19
+
+# Default integrations
+default_config:
+
+# Text-to-speech
+tts:
+  - platform: google_translate
+    language: vi
+
+# Automations
+automation: !include automations.yaml
+
+# Scripts
+script: !include scripts.yaml
+
+# Scenes
+scene: !include scenes.yaml
+
+# REST API for external control (OpenClaw integration)
+api:
+
+# Enable logging
+logger:
+  default: info
+  logs:
+    homeassistant.components.rest: debug
