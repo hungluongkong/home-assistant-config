@@ -10,6 +10,18 @@ homeassistant:
   latitude: 10.8231
   longitude: 106.6297
   elevation: 19
+  external_url: "https://wsw.tail632a96.ts.net:8443"
+  internal_url: "http://192.168.100.9:8123"
+
+# Trusted proxy for Tailscale
+http:
+  use_x_forwarded_for: true
+  trusted_proxies:
+    - 127.0.0.1
+    - ::1
+    - 172.18.0.0/16
+    - 100.64.0.0/10
+    - 192.168.100.0/24
 
 # Default integrations
 default_config:
