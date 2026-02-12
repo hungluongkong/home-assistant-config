@@ -1,177 +1,415 @@
-2026-02-12 12:07:27.496 INFO (MainThread) [homeassistant.setup] Setup of domain http took 0.02 seconds
-2026-02-12 12:07:27.496 INFO (MainThread) [homeassistant.setup] Setup of domain system_log took 0.02 seconds
-2026-02-12 12:07:27.496 INFO (MainThread) [homeassistant.setup] Setup of domain logger took 0.02 seconds
-2026-02-12 12:07:27.496 INFO (MainThread) [homeassistant.setup] Setting up websocket_api
-2026-02-12 12:07:27.496 INFO (MainThread) [homeassistant.setup] Setup of domain websocket_api took 0.00 seconds
-2026-02-12 12:07:27.500 INFO (MainThread) [homeassistant.setup] Setting up network
-2026-02-12 12:07:27.502 INFO (MainThread) [homeassistant.setup] Setup of domain network took 0.00 seconds
-2026-02-12 12:07:27.502 INFO (MainThread) [homeassistant.bootstrap] Setting up stage labs: {'labs'}; already set up: {}
+2026-02-12 14:04:10.874 WARNING (SyncWorker_0) [homeassistant.loader] We found a custom integration hacs which has not been tested by Home Assistant. This component might cause stability problems, be sure to disable it if you experience issues with Home Assistant
+2026-02-12 14:04:10.882 WARNING (SyncWorker_0) [homeassistant.loader] We found a custom integration xiaomi_miot which has not been tested by Home Assistant. This component might cause stability problems, be sure to disable it if you experience issues with Home Assistant
+2026-02-12 14:04:11.668 INFO (MainThread) [homeassistant.setup] Setup of domain http took 0.08 seconds
+2026-02-12 14:04:11.669 INFO (MainThread) [homeassistant.setup] Setup of domain system_log took 0.08 seconds
+2026-02-12 14:04:11.669 INFO (MainThread) [homeassistant.setup] Setup of domain logger took 0.08 seconds
+2026-02-12 14:04:11.669 INFO (MainThread) [homeassistant.setup] Setting up websocket_api
+2026-02-12 14:04:11.669 INFO (MainThread) [homeassistant.setup] Setup of domain websocket_api took 0.00 seconds
+2026-02-12 14:04:11.673 INFO (MainThread) [homeassistant.setup] Setting up network
+2026-02-12 14:04:11.674 INFO (MainThread) [homeassistant.setup] Setup of domain network took 0.00 seconds
+2026-02-12 14:04:11.674 INFO (MainThread) [homeassistant.bootstrap] Setting up stage labs: {'labs'}; already set up: {}
 Dependencies: {}; already set up: {}
-2026-02-12 12:07:27.502 INFO (MainThread) [homeassistant.setup] Setting up labs
-2026-02-12 12:07:27.502 INFO (MainThread) [homeassistant.setup] Setup of domain labs took 0.00 seconds
-2026-02-12 12:07:27.502 INFO (MainThread) [homeassistant.bootstrap] Setting up stage frontend: {'frontend'}; already set up: {}
-Dependencies: {'config', 'lovelace', 'search', 'api', 'repairs', 'onboarding', 'device_automation', 'file_upload', 'auth', 'diagnostics'}; already set up: {'websocket_api', 'http', 'system_log'}
-2026-02-12 12:07:27.502 INFO (MainThread) [homeassistant.setup] Setting up config
-2026-02-12 12:07:27.504 INFO (MainThread) [homeassistant.setup] Setup of domain config took 0.00 seconds
-2026-02-12 12:07:27.504 INFO (MainThread) [homeassistant.setup] Setting up auth
-2026-02-12 12:07:27.504 INFO (MainThread) [homeassistant.setup] Setup of domain auth took 0.00 seconds
-2026-02-12 12:07:27.504 INFO (MainThread) [homeassistant.setup] Setting up onboarding
-2026-02-12 12:07:27.505 INFO (MainThread) [homeassistant.setup] Setup of domain onboarding took 0.00 seconds
-2026-02-12 12:07:27.505 INFO (MainThread) [homeassistant.setup] Setting up lovelace
-2026-02-12 12:07:27.505 INFO (MainThread) [homeassistant.setup] Setup of domain lovelace took 0.00 seconds
-2026-02-12 12:07:27.505 INFO (MainThread) [homeassistant.setup] Setting up search
-2026-02-12 12:07:27.506 INFO (MainThread) [homeassistant.setup] Setup of domain search took 0.00 seconds
-2026-02-12 12:07:27.506 INFO (MainThread) [homeassistant.setup] Setting up api
-2026-02-12 12:07:27.507 INFO (MainThread) [homeassistant.setup] Setup of domain api took 0.00 seconds
-2026-02-12 12:07:27.507 INFO (MainThread) [homeassistant.setup] Setting up repairs
-2026-02-12 12:07:27.507 INFO (MainThread) [homeassistant.setup] Setup of domain repairs took 0.00 seconds
-2026-02-12 12:07:27.507 INFO (MainThread) [homeassistant.setup] Setting up device_automation
-2026-02-12 12:07:27.507 INFO (MainThread) [homeassistant.setup] Setup of domain device_automation took 0.00 seconds
-2026-02-12 12:07:27.507 INFO (MainThread) [homeassistant.setup] Setting up diagnostics
-2026-02-12 12:07:27.508 INFO (MainThread) [homeassistant.setup] Setup of domain diagnostics took 0.00 seconds
-2026-02-12 12:07:27.508 INFO (MainThread) [homeassistant.setup] Setting up file_upload
-2026-02-12 12:07:27.508 INFO (MainThread) [homeassistant.setup] Setup of domain file_upload took 0.00 seconds
-2026-02-12 12:07:27.513 INFO (MainThread) [homeassistant.setup] Setting up frontend
-2026-02-12 12:07:27.519 INFO (MainThread) [homeassistant.setup] Setup of domain frontend took 0.01 seconds
-2026-02-12 12:07:27.519 INFO (MainThread) [homeassistant.bootstrap] Setting up stage recorder: {'recorder'}; already set up: {}
+2026-02-12 14:04:11.674 INFO (MainThread) [homeassistant.setup] Setting up labs
+2026-02-12 14:04:11.674 INFO (MainThread) [homeassistant.setup] Setup of domain labs took 0.00 seconds
+2026-02-12 14:04:11.674 INFO (MainThread) [homeassistant.bootstrap] Setting up stage frontend: {'frontend'}; already set up: {}
+Dependencies: {'lovelace', 'auth', 'repairs', 'file_upload', 'diagnostics', 'device_automation', 'onboarding', 'api', 'search', 'config'}; already set up: {'http', 'system_log', 'websocket_api'}
+2026-02-12 14:04:11.674 INFO (MainThread) [homeassistant.setup] Setting up auth
+2026-02-12 14:04:11.675 INFO (MainThread) [homeassistant.setup] Setup of domain auth took 0.00 seconds
+2026-02-12 14:04:11.675 INFO (MainThread) [homeassistant.setup] Setting up onboarding
+2026-02-12 14:04:11.675 INFO (MainThread) [homeassistant.setup] Setup of domain onboarding took 0.00 seconds
+2026-02-12 14:04:11.675 INFO (MainThread) [homeassistant.setup] Setting up lovelace
+2026-02-12 14:04:11.676 INFO (MainThread) [homeassistant.setup] Setting up api
+2026-02-12 14:04:11.676 INFO (MainThread) [homeassistant.setup] Setup of domain api took 0.00 seconds
+2026-02-12 14:04:11.676 INFO (MainThread) [homeassistant.setup] Setting up config
+2026-02-12 14:04:11.677 INFO (MainThread) [homeassistant.setup] Setup of domain config took 0.00 seconds
+2026-02-12 14:04:11.678 INFO (MainThread) [homeassistant.setup] Setting up device_automation
+2026-02-12 14:04:11.678 INFO (MainThread) [homeassistant.setup] Setup of domain device_automation took 0.00 seconds
+2026-02-12 14:04:11.678 INFO (MainThread) [homeassistant.setup] Setting up diagnostics
+2026-02-12 14:04:11.678 INFO (MainThread) [homeassistant.setup] Setup of domain diagnostics took 0.00 seconds
+2026-02-12 14:04:11.678 INFO (MainThread) [homeassistant.setup] Setting up file_upload
+2026-02-12 14:04:11.678 INFO (MainThread) [homeassistant.setup] Setup of domain file_upload took 0.00 seconds
+2026-02-12 14:04:11.678 INFO (MainThread) [homeassistant.setup] Setting up repairs
+2026-02-12 14:04:11.679 INFO (MainThread) [homeassistant.setup] Setup of domain repairs took 0.00 seconds
+2026-02-12 14:04:11.679 INFO (MainThread) [homeassistant.setup] Setting up search
+2026-02-12 14:04:11.679 INFO (MainThread) [homeassistant.setup] Setup of domain search took 0.00 seconds
+2026-02-12 14:04:11.680 INFO (MainThread) [homeassistant.setup] Setup of domain lovelace took 0.00 seconds
+2026-02-12 14:04:11.685 INFO (MainThread) [homeassistant.setup] Setting up frontend
+2026-02-12 14:04:11.687 INFO (MainThread) [homeassistant.setup] Setup of domain frontend took 0.00 seconds
+2026-02-12 14:04:11.688 INFO (MainThread) [homeassistant.bootstrap] Setting up stage recorder: {'recorder'}; already set up: {}
 Dependencies: {}; already set up: {}
-2026-02-12 12:07:27.522 INFO (MainThread) [homeassistant.components.http] Now listening on port 8123
-2026-02-12 12:07:27.522 INFO (MainThread) [homeassistant.setup] Setup of domain http took 0.00 seconds
-2026-02-12 12:07:27.529 INFO (MainThread) [homeassistant.setup] Setting up recorder
-2026-02-12 12:07:27.593 INFO (MainThread) [homeassistant.setup] Setup of domain recorder took 0.06 seconds
-2026-02-12 12:07:27.593 INFO (MainThread) [homeassistant.bootstrap] Nothing to set up in stage debugger: {'debugpy'}
-2026-02-12 12:07:27.593 INFO (MainThread) [homeassistant.bootstrap] Setting up stage zeroconf: {'zeroconf'}; already set up: {}
-Dependencies: {}; already set up: {'websocket_api', 'network', 'http', 'api'}
-2026-02-12 12:07:27.596 INFO (MainThread) [homeassistant.setup] Setting up zeroconf
-2026-02-12 12:07:27.597 INFO (MainThread) [homeassistant.components.zeroconf] Starting Zeroconf broadcast
-2026-02-12 12:07:27.597 INFO (MainThread) [homeassistant.setup] Setup of domain zeroconf took 0.00 seconds
-2026-02-12 12:07:27.598 INFO (MainThread) [homeassistant.bootstrap] Setting up stage 1: {'bluetooth', 'dhcp', 'cloud', 'usb', 'ssdp'}; already set up: {}
-Dependencies: {'backup', 'tts', 'stt', 'web_rtc', 'intent', 'webhook', 'assist_pipeline', 'ffmpeg', 'wake_word', 'conversation'}; already set up: {'network', 'http', 'repairs', 'auth', 'websocket_api'}
-2026-02-12 12:07:27.599 INFO (MainThread) [homeassistant.setup] Setting up webhook
-2026-02-12 12:07:27.599 INFO (MainThread) [homeassistant.setup] Setup of domain webhook took 0.00 seconds
-2026-02-12 12:07:27.607 INFO (MainThread) [homeassistant.setup] Setting up stt
-2026-02-12 12:07:27.607 INFO (MainThread) [homeassistant.setup] Setup of domain stt took 0.00 seconds
-2026-02-12 12:07:27.611 INFO (MainThread) [homeassistant.setup] Setting up wake_word
-2026-02-12 12:07:27.611 INFO (MainThread) [homeassistant.setup] Setup of domain wake_word took 0.00 seconds
-2026-02-12 12:07:27.621 INFO (MainThread) [homeassistant.setup] Setting up intent
-2026-02-12 12:07:27.621 INFO (MainThread) [homeassistant.setup] Setup of domain intent took 0.00 seconds
-2026-02-12 12:07:27.625 INFO (MainThread) [homeassistant.setup] Setting up web_rtc
-2026-02-12 12:07:27.625 INFO (MainThread) [homeassistant.setup] Setup of domain web_rtc took 0.00 seconds
-2026-02-12 12:07:27.639 INFO (MainThread) [homeassistant.setup] Setting up ffmpeg
-2026-02-12 12:07:27.639 INFO (MainThread) [homeassistant.setup] Setup of domain ffmpeg took 0.00 seconds
-2026-02-12 12:07:27.641 INFO (MainThread) [homeassistant.setup] Setting up backup
-2026-02-12 12:07:27.642 INFO (MainThread) [homeassistant.setup] Setup of domain backup took 0.00 seconds
-2026-02-12 12:07:27.665 INFO (MainThread) [homeassistant.setup] Setting up usb
-2026-02-12 12:07:27.666 INFO (MainThread) [homeassistant.setup] Setup of domain usb took 0.00 seconds
-2026-02-12 12:07:27.743 INFO (MainThread) [homeassistant.setup] Setting up dhcp
-2026-02-12 12:07:27.744 INFO (MainThread) [homeassistant.setup] Setup of domain dhcp took 0.00 seconds
-2026-02-12 12:07:27.801 INFO (MainThread) [homeassistant.setup] Setting up ssdp
-2026-02-12 12:07:27.814 INFO (MainThread) [homeassistant.setup] Setup of domain ssdp took 0.01 seconds
-2026-02-12 12:07:27.899 INFO (MainThread) [homeassistant.setup] Setting up conversation
-2026-02-12 12:07:27.900 INFO (MainThread) [homeassistant.setup] Setup of domain conversation took 0.00 seconds
-2026-02-12 12:07:27.911 INFO (MainThread) [homeassistant.setup] Setting up bluetooth
-2026-02-12 12:07:27.943 INFO (MainThread) [homeassistant.setup] Setup of domain bluetooth took 0.03 seconds
-2026-02-12 12:07:27.949 INFO (MainThread) [homeassistant.setup] Setting up tts
-2026-02-12 12:07:27.952 INFO (MainThread) [homeassistant.setup] Setting up event
-2026-02-12 12:07:27.952 INFO (MainThread) [homeassistant.setup] Setup of domain event took 0.00 seconds
-2026-02-12 12:07:27.952 INFO (MainThread) [homeassistant.components.event] Setting up backup.event
-2026-02-12 12:07:27.953 INFO (MainThread) [homeassistant.setup] Setting up sensor
-2026-02-12 12:07:27.953 INFO (MainThread) [homeassistant.setup] Setup of domain sensor took 0.00 seconds
-2026-02-12 12:07:27.953 INFO (MainThread) [homeassistant.components.sensor] Setting up backup.sensor
-2026-02-12 12:07:27.961 INFO (MainThread) [homeassistant.setup] Setup of domain tts took 0.01 seconds
-2026-02-12 12:07:27.982 INFO (MainThread) [homeassistant.setup] Setting up assist_pipeline
-2026-02-12 12:07:27.983 INFO (MainThread) [homeassistant.setup] Setup of domain assist_pipeline took 0.00 seconds
-2026-02-12 12:07:28.266 INFO (MainThread) [homeassistant.setup] Setting up cloud
-2026-02-12 12:07:28.276 INFO (MainThread) [homeassistant.setup] Setup of domain cloud took 0.01 seconds
-2026-02-12 12:07:28.277 INFO (MainThread) [homeassistant.bootstrap] Setting up stage 2: {'automation', 'input_text', 'input_button', 'input_datetime', 'person', 'counter', 'analytics', 'application_credentials', 'hardware', 'input_boolean', 'scene', 'go2rtc', 'script', 'system_health', 'zone', 'tag', 'input_number', 'sun', 'schedule', 'timer', 'input_select', 'default_config'}; already set up: {'homeassistant', 'backup', 'network', 'tts', 'labs', 'http', 'api', 'logger', 'frontend'}
-Dependencies: {'blueprint', 'image_upload', 'logbook', 'mobile_app', 'usage_prediction', 'trace', 'my', 'homeassistant_alerts', 'energy', 'file', 'camera', 'media_source', 'stream', 'history'}; already set up: {'lovelace', 'system_log', 'auth', 'stt', 'usb', 'websocket_api', 'network', 'tts', 'repairs', 'zeroconf', 'recorder', 'device_automation', 'ffmpeg', 'wake_word', 'diagnostics', 'bluetooth', 'search', 'api', 'frontend', 'web_rtc', 'intent', 'assist_pipeline', 'file_upload', 'backup', 'config', 'http', 'dhcp', 'cloud', 'webhook', 'onboarding', 'conversation', 'ssdp'}
-2026-02-12 12:07:28.277 INFO (MainThread) [homeassistant.setup] Setting up scene
-2026-02-12 12:07:28.277 INFO (MainThread) [homeassistant.components.scene] Setting up homeassistant.scene
-2026-02-12 12:07:28.278 INFO (MainThread) [homeassistant.setup] Setup of domain scene took 0.00 seconds
-2026-02-12 12:07:28.278 INFO (MainThread) [homeassistant.setup] Setting up camera
-2026-02-12 12:07:28.279 INFO (MainThread) [homeassistant.setup] Setup of domain camera took 0.00 seconds
-2026-02-12 12:07:28.279 INFO (MainThread) [homeassistant.setup] Setting up blueprint
-2026-02-12 12:07:28.279 INFO (MainThread) [homeassistant.setup] Setup of domain blueprint took 0.00 seconds
-2026-02-12 12:07:28.279 INFO (MainThread) [homeassistant.setup] Setting up trace
-2026-02-12 12:07:28.279 INFO (MainThread) [homeassistant.setup] Setup of domain trace took 0.00 seconds
-2026-02-12 12:07:28.279 INFO (MainThread) [homeassistant.setup] Setting up automation
-2026-02-12 12:07:28.280 INFO (MainThread) [homeassistant.setup] Setup of domain automation took 0.00 seconds
-2026-02-12 12:07:28.280 INFO (MainThread) [homeassistant.setup] Setting up image_upload
-2026-02-12 12:07:28.280 INFO (MainThread) [homeassistant.setup] Setup of domain image_upload took 0.00 seconds
-2026-02-12 12:07:28.281 INFO (MainThread) [homeassistant.setup] Setting up script
-2026-02-12 12:07:28.281 INFO (MainThread) [homeassistant.setup] Setup of domain script took 0.00 seconds
-2026-02-12 12:07:28.281 INFO (MainThread) [homeassistant.setup] Setting up system_health
-2026-02-12 12:07:28.281 INFO (MainThread) [homeassistant.setup] Setup of domain system_health took 0.00 seconds
-2026-02-12 12:07:28.281 INFO (MainThread) [homeassistant.setup] Setting up media_source
-2026-02-12 12:07:28.282 INFO (MainThread) [homeassistant.setup] Setup of domain media_source took 0.00 seconds
-2026-02-12 12:07:28.283 INFO (MainThread) [homeassistant.setup] Setting up stream
-2026-02-12 12:07:28.283 INFO (MainThread) [homeassistant.setup] Setting up history
-2026-02-12 12:07:28.283 INFO (MainThread) [homeassistant.setup] Setup of domain history took 0.00 seconds
-2026-02-12 12:07:28.284 INFO (MainThread) [homeassistant.setup] Setting up input_select
-2026-02-12 12:07:28.284 INFO (MainThread) [homeassistant.setup] Setup of domain input_select took 0.00 seconds
-2026-02-12 12:07:28.285 INFO (MainThread) [homeassistant.setup] Setting up input_button
-2026-02-12 12:07:28.285 INFO (MainThread) [homeassistant.setup] Setup of domain input_button took 0.00 seconds
-2026-02-12 12:07:28.285 INFO (MainThread) [homeassistant.setup] Setting up zone
-2026-02-12 12:07:28.286 INFO (MainThread) [homeassistant.setup] Setup of domain zone took 0.00 seconds
-2026-02-12 12:07:28.286 INFO (MainThread) [homeassistant.setup] Setting up person
-2026-02-12 12:07:28.286 INFO (MainThread) [homeassistant.setup] Setup of domain person took 0.00 seconds
-2026-02-12 12:07:28.287 INFO (MainThread) [homeassistant.setup] Setting up logbook
-2026-02-12 12:07:28.287 INFO (MainThread) [homeassistant.setup] Setup of domain logbook took 0.00 seconds
-2026-02-12 12:07:28.287 INFO (MainThread) [homeassistant.setup] Setting up input_number
-2026-02-12 12:07:28.289 INFO (MainThread) [homeassistant.setup] Setup of domain input_number took 0.00 seconds
-2026-02-12 12:07:28.289 INFO (MainThread) [homeassistant.setup] Setting up timer
-2026-02-12 12:07:28.290 INFO (MainThread) [homeassistant.setup] Setup of domain timer took 0.00 seconds
-2026-02-12 12:07:28.290 INFO (MainThread) [homeassistant.setup] Setting up input_boolean
-2026-02-12 12:07:28.290 INFO (MainThread) [homeassistant.setup] Setup of domain input_boolean took 0.00 seconds
-2026-02-12 12:07:28.312 INFO (MainThread) [homeassistant.setup] Setting up usage_prediction
-2026-02-12 12:07:28.312 INFO (MainThread) [homeassistant.setup] Setup of domain usage_prediction took 0.00 seconds
-2026-02-12 12:07:28.382 INFO (MainThread) [homeassistant.setup] Setup of domain stream took 0.10 seconds
-2026-02-12 12:07:28.385 INFO (MainThread) [homeassistant.setup] Setting up go2rtc
-2026-02-12 12:07:28.395 INFO (MainThread) [homeassistant.setup] Setting up input_text
-2026-02-12 12:07:28.396 INFO (MainThread) [homeassistant.setup] Setup of domain input_text took 0.00 seconds
-2026-02-12 12:07:28.396 INFO (MainThread) [homeassistant.setup] Setting up input_datetime
-2026-02-12 12:07:28.397 INFO (MainThread) [homeassistant.setup] Setup of domain input_datetime took 0.00 seconds
-2026-02-12 12:07:28.405 INFO (MainThread) [homeassistant.setup] Setting up tag
-2026-02-12 12:07:28.406 INFO (MainThread) [homeassistant.setup] Setup of domain tag took 0.00 seconds
-2026-02-12 12:07:28.408 INFO (MainThread) [homeassistant.setup] Setting up counter
-2026-02-12 12:07:28.409 INFO (MainThread) [homeassistant.setup] Setup of domain counter took 0.00 seconds
-2026-02-12 12:07:28.410 INFO (MainThread) [homeassistant.setup] Setup of domain go2rtc took 0.02 seconds
-2026-02-12 12:07:28.413 INFO (MainThread) [homeassistant.setup] Setting up application_credentials
-2026-02-12 12:07:28.413 INFO (MainThread) [homeassistant.setup] Setup of domain application_credentials took 0.00 seconds
-2026-02-12 12:07:28.417 INFO (MainThread) [homeassistant.setup] Setting up hardware
-2026-02-12 12:07:28.431 INFO (MainThread) [homeassistant.setup] Setting up sun
-2026-02-12 12:07:28.431 INFO (MainThread) [homeassistant.setup] Setup of domain sun took 0.00 seconds
-2026-02-12 12:07:28.432 INFO (MainThread) [homeassistant.setup] Setting up binary_sensor
-2026-02-12 12:07:28.432 INFO (MainThread) [homeassistant.setup] Setup of domain binary_sensor took 0.00 seconds
-2026-02-12 12:07:28.433 INFO (MainThread) [homeassistant.components.binary_sensor] Setting up sun.binary_sensor
-2026-02-12 12:07:28.433 INFO (MainThread) [homeassistant.components.sensor] Setting up sun.sensor
-2026-02-12 12:07:28.437 INFO (MainThread) [homeassistant.setup] Setting up schedule
-2026-02-12 12:07:28.438 INFO (MainThread) [homeassistant.setup] Setup of domain schedule took 0.00 seconds
-2026-02-12 12:07:28.440 INFO (MainThread) [homeassistant.setup] Setting up my
-2026-02-12 12:07:28.440 INFO (MainThread) [homeassistant.setup] Setup of domain my took 0.00 seconds
-2026-02-12 12:07:28.448 INFO (MainThread) [homeassistant.setup] Setting up homeassistant_alerts
-2026-02-12 12:07:28.448 INFO (MainThread) [homeassistant.setup] Setup of domain homeassistant_alerts took 0.00 seconds
-2026-02-12 12:07:28.475 INFO (MainThread) [homeassistant.setup] Setting up energy
-2026-02-12 12:07:28.475 INFO (MainThread) [homeassistant.setup] Setup of domain energy took 0.00 seconds
-2026-02-12 12:07:28.481 INFO (MainThread) [homeassistant.setup] Setup of domain hardware took 0.06 seconds
-2026-02-12 12:07:28.483 INFO (MainThread) [homeassistant.setup] Setting up file
-2026-02-12 12:07:28.483 INFO (MainThread) [homeassistant.setup] Setup of domain file took 0.00 seconds
-2026-02-12 12:07:28.516 INFO (MainThread) [homeassistant.setup] Setting up mobile_app
-2026-02-12 12:07:28.517 INFO (MainThread) [homeassistant.setup] Setting up notify
-2026-02-12 12:07:28.517 INFO (MainThread) [homeassistant.setup] Setup of domain notify took 0.00 seconds
-2026-02-12 12:07:28.517 INFO (MainThread) [homeassistant.setup] Setup of domain mobile_app took 0.00 seconds
-2026-02-12 12:07:28.517 INFO (MainThread) [homeassistant.components.notify] Setting up notify.mobile_app
-2026-02-12 12:07:28.518 INFO (MainThread) [homeassistant.setup] Setting up default_config
-2026-02-12 12:07:28.518 INFO (MainThread) [homeassistant.setup] Setup of domain default_config took 0.00 seconds
-2026-02-12 12:07:28.522 INFO (MainThread) [homeassistant.components.sensor] Setting up energy.sensor
-2026-02-12 12:07:28.609 INFO (MainThread) [homeassistant.setup] Setting up analytics
-2026-02-12 12:07:28.609 INFO (MainThread) [homeassistant.setup] Setup of domain analytics took 0.00 seconds
-2026-02-12 12:07:28.763 INFO (MainThread) [homeassistant.bootstrap] Home Assistant initialized in 1.92s
-2026-02-12 12:07:28.764 INFO (MainThread) [homeassistant.core] Starting Home Assistant 2026.2.1
-2026-02-12 12:22:41.529 ERROR (MainThread) [homeassistant.components.http.forwarded] Received X-Forwarded-For header from an untrusted proxy 172.18.0.1
-2026-02-12 12:22:41.761 ERROR (MainThread) [homeassistant.components.http.forwarded] Received X-Forwarded-For header from an untrusted proxy 172.18.0.1
-2026-02-12 12:22:52.819 ERROR (MainThread) [homeassistant.components.http.forwarded] Received X-Forwarded-For header from an untrusted proxy 172.18.0.1
-2026-02-12 12:22:52.990 ERROR (MainThread) [homeassistant.components.http.forwarded] Received X-Forwarded-For header from an untrusted proxy 172.18.0.1
-2026-02-12 12:22:54.284 ERROR (MainThread) [homeassistant.components.http.forwarded] Received X-Forwarded-For header from an untrusted proxy 172.18.0.1
-2026-02-12 12:22:54.391 ERROR (MainThread) [homeassistant.components.http.forwarded] Received X-Forwarded-For header from an untrusted proxy 172.18.0.1
-2026-02-12 12:23:49.500 INFO (Recorder) [homeassistant.components.recorder.pool.RecorderPool] Pool recreating
+2026-02-12 14:04:11.690 INFO (MainThread) [homeassistant.components.http] Now listening on port 8123
+2026-02-12 14:04:11.690 INFO (MainThread) [homeassistant.setup] Setup of domain http took 0.00 seconds
+2026-02-12 14:04:11.698 INFO (MainThread) [homeassistant.setup] Setting up recorder
+2026-02-12 14:04:11.933 INFO (MainThread) [homeassistant.setup] Setup of domain recorder took 0.24 seconds
+2026-02-12 14:04:11.933 INFO (MainThread) [homeassistant.bootstrap] Nothing to set up in stage debugger: {'debugpy'}
+2026-02-12 14:04:11.933 INFO (MainThread) [homeassistant.bootstrap] Setting up stage zeroconf: {'zeroconf'}; already set up: {}
+Dependencies: {}; already set up: {'network', 'http', 'websocket_api', 'api'}
+2026-02-12 14:04:11.934 INFO (MainThread) [homeassistant.setup] Setting up zeroconf
+2026-02-12 14:04:11.935 INFO (MainThread) [homeassistant.components.zeroconf] Starting Zeroconf broadcast
+2026-02-12 14:04:11.935 INFO (MainThread) [homeassistant.setup] Setup of domain zeroconf took 0.00 seconds
+2026-02-12 14:04:11.935 INFO (MainThread) [homeassistant.bootstrap] Setting up stage 1: {'cloud', 'ssdp', 'usb', 'bluetooth', 'dhcp'}; already set up: {}
+Dependencies: {'stt', 'ffmpeg', 'assist_pipeline', 'web_rtc', 'webhook', 'conversation', 'backup', 'wake_word', 'intent', 'tts'}; already set up: {'repairs', 'auth', 'http', 'network', 'websocket_api'}
+2026-02-12 14:04:11.936 INFO (MainThread) [homeassistant.setup] Setting up webhook
+2026-02-12 14:04:11.936 INFO (MainThread) [homeassistant.setup] Setup of domain webhook took 0.00 seconds
+2026-02-12 14:04:11.936 INFO (MainThread) [homeassistant.setup] Setting up backup
+2026-02-12 14:04:11.941 INFO (MainThread) [homeassistant.setup] Setup of domain backup took 0.00 seconds
+2026-02-12 14:04:11.946 INFO (MainThread) [homeassistant.setup] Setting up stt
+2026-02-12 14:04:11.946 INFO (MainThread) [homeassistant.setup] Setup of domain stt took 0.00 seconds
+2026-02-12 14:04:11.957 INFO (MainThread) [homeassistant.setup] Setting up intent
+2026-02-12 14:04:11.957 INFO (MainThread) [homeassistant.setup] Setup of domain intent took 0.00 seconds
+2026-02-12 14:04:11.961 INFO (MainThread) [homeassistant.setup] Setting up wake_word
+2026-02-12 14:04:11.961 INFO (MainThread) [homeassistant.setup] Setup of domain wake_word took 0.00 seconds
+2026-02-12 14:04:11.968 INFO (MainThread) [homeassistant.setup] Setting up ffmpeg
+2026-02-12 14:04:11.968 INFO (MainThread) [homeassistant.setup] Setup of domain ffmpeg took 0.00 seconds
+2026-02-12 14:04:11.971 INFO (MainThread) [homeassistant.setup] Setting up web_rtc
+2026-02-12 14:04:11.971 INFO (MainThread) [homeassistant.setup] Setup of domain web_rtc took 0.00 seconds
+2026-02-12 14:04:12.005 INFO (MainThread) [homeassistant.setup] Setting up ssdp
+2026-02-12 14:04:12.010 INFO (MainThread) [homeassistant.setup] Setup of domain ssdp took 0.00 seconds
+2026-02-12 14:04:12.025 INFO (MainThread) [homeassistant.setup] Setting up usb
+2026-02-12 14:04:12.025 INFO (MainThread) [homeassistant.setup] Setup of domain usb took 0.00 seconds
+2026-02-12 14:04:12.058 INFO (MainThread) [homeassistant.setup] Setting up dhcp
+2026-02-12 14:04:12.059 INFO (MainThread) [homeassistant.setup] Setup of domain dhcp took 0.00 seconds
+2026-02-12 14:04:12.169 INFO (MainThread) [homeassistant.setup] Setting up conversation
+2026-02-12 14:04:12.169 INFO (MainThread) [homeassistant.setup] Setup of domain conversation took 0.00 seconds
+2026-02-12 14:04:12.230 INFO (MainThread) [homeassistant.setup] Setting up bluetooth
+2026-02-12 14:04:12.239 INFO (MainThread) [homeassistant.setup] Setting up event
+2026-02-12 14:04:12.239 INFO (MainThread) [homeassistant.setup] Setup of domain event took 0.00 seconds
+2026-02-12 14:04:12.239 INFO (MainThread) [homeassistant.setup] Setting up sensor
+2026-02-12 14:04:12.239 INFO (MainThread) [homeassistant.setup] Setup of domain sensor took 0.00 seconds
+2026-02-12 14:04:12.243 INFO (MainThread) [homeassistant.components.event] Setting up backup.event
+2026-02-12 14:04:12.243 INFO (MainThread) [homeassistant.components.sensor] Setting up backup.sensor
+2026-02-12 14:04:12.265 INFO (MainThread) [homeassistant.setup] Setup of domain bluetooth took 0.03 seconds
+2026-02-12 14:04:12.278 INFO (MainThread) [homeassistant.setup] Setting up tts
+2026-02-12 14:04:12.287 INFO (MainThread) [homeassistant.setup] Setup of domain tts took 0.01 seconds
+2026-02-12 14:04:12.318 INFO (MainThread) [homeassistant.setup] Setting up assist_pipeline
+2026-02-12 14:04:12.319 INFO (MainThread) [homeassistant.setup] Setup of domain assist_pipeline took 0.00 seconds
+2026-02-12 14:04:12.486 INFO (MainThread) [homeassistant.setup] Setting up cloud
+2026-02-12 14:04:12.489 INFO (MainThread) [homeassistant.setup] Setup of domain cloud took 0.00 seconds
+2026-02-12 14:04:12.489 INFO (MainThread) [homeassistant.bootstrap] Setting up stage 2: {'shopping_list', 'scene', 'input_datetime', 'person', 'automation', 'counter', 'hardware', 'radio_browser', 'analytics', 'input_boolean', 'stream', 'tag', 'script', 'google_translate', 'input_text', 'input_number', 'hacs', 'timer', 'xiaomi_miot', 'zone', 'system_health', 'sun', 'camera', 'application_credentials', 'go2rtc', 'schedule', 'default_config', 'input_button', 'input_select', 'met'}; already set up: {'frontend', 'logger', 'http', 'homeassistant', 'network', 'api', 'labs', 'backup', 'tts'}
+Dependencies: {'file', 'mobile_app', 'homeassistant_alerts', 'usage_prediction', 'history', 'blueprint', 'image_upload', 'energy', 'logbook', 'media_source', 'my', 'trace'}; already set up: {'stt', 'cloud', 'lovelace', 'diagnostics', 'device_automation', 'zeroconf', 'onboarding', 'search', 'bluetooth', 'tts', 'assist_pipeline', 'repairs', 'persistent_notification', 'webhook', 'recorder', 'ssdp', 'system_log', 'websocket_api', 'backup', 'usb', 'intent', 'auth', 'web_rtc', 'file_upload', 'conversation', 'wake_word', 'config', 'ffmpeg', 'frontend', 'http', 'network', 'api', 'dhcp'}
+2026-02-12 14:04:12.489 INFO (MainThread) [homeassistant.setup] Setting up scene
+2026-02-12 14:04:12.489 INFO (MainThread) [homeassistant.components.scene] Setting up homeassistant.scene
+2026-02-12 14:04:12.492 INFO (MainThread) [homeassistant.setup] Setup of domain scene took 0.00 seconds
+2026-02-12 14:04:12.493 INFO (MainThread) [homeassistant.setup] Setting up image_upload
+2026-02-12 14:04:12.493 INFO (MainThread) [homeassistant.setup] Setup of domain image_upload took 0.00 seconds
+2026-02-12 14:04:12.493 INFO (MainThread) [homeassistant.setup] Setting up zone
+2026-02-12 14:04:12.494 INFO (MainThread) [homeassistant.setup] Setup of domain zone took 0.00 seconds
+2026-02-12 14:04:12.495 INFO (MainThread) [homeassistant.setup] Setting up person
+2026-02-12 14:04:12.495 INFO (MainThread) [homeassistant.setup] Setting up blueprint
+2026-02-12 14:04:12.495 INFO (MainThread) [homeassistant.setup] Setup of domain blueprint took 0.00 seconds
+2026-02-12 14:04:12.495 INFO (MainThread) [homeassistant.setup] Setting up trace
+2026-02-12 14:04:12.495 INFO (MainThread) [homeassistant.setup] Setup of domain trace took 0.00 seconds
+2026-02-12 14:04:12.495 INFO (MainThread) [homeassistant.setup] Setting up automation
+2026-02-12 14:04:12.496 INFO (MainThread) [homeassistant.setup] Setup of domain automation took 0.00 seconds
+2026-02-12 14:04:12.496 INFO (MainThread) [homeassistant.setup] Setting up history
+2026-02-12 14:04:12.496 INFO (MainThread) [homeassistant.setup] Setup of domain history took 0.00 seconds
+2026-02-12 14:04:12.497 INFO (MainThread) [homeassistant.setup] Setting up input_boolean
+2026-02-12 14:04:12.497 INFO (MainThread) [homeassistant.setup] Setup of domain input_boolean took 0.00 seconds
+2026-02-12 14:04:12.497 INFO (MainThread) [homeassistant.setup] Setting up media_source
+2026-02-12 14:04:12.497 INFO (MainThread) [homeassistant.setup] Setup of domain media_source took 0.00 seconds
+2026-02-12 14:04:12.498 INFO (MainThread) [homeassistant.setup] Setting up stream
+2026-02-12 14:04:12.498 INFO (MainThread) [homeassistant.setup] Setting up script
+2026-02-12 14:04:12.498 INFO (MainThread) [homeassistant.setup] Setup of domain script took 0.00 seconds
+2026-02-12 14:04:12.498 INFO (MainThread) [homeassistant.setup] Setting up google_translate
+2026-02-12 14:04:12.498 INFO (MainThread) [homeassistant.setup] Setup of domain google_translate took 0.00 seconds
+2026-02-12 14:04:12.499 INFO (MainThread) [homeassistant.setup] Setting up input_number
+2026-02-12 14:04:12.499 INFO (MainThread) [homeassistant.setup] Setup of domain input_number took 0.00 seconds
+2026-02-12 14:04:12.500 INFO (MainThread) [homeassistant.setup] Setting up logbook
+2026-02-12 14:04:12.501 INFO (MainThread) [homeassistant.setup] Setup of domain logbook took 0.00 seconds
+2026-02-12 14:04:12.501 INFO (MainThread) [homeassistant.setup] Setting up timer
+2026-02-12 14:04:12.501 INFO (MainThread) [homeassistant.setup] Setup of domain timer took 0.00 seconds
+2026-02-12 14:04:12.502 INFO (MainThread) [homeassistant.setup] Setting up system_health
+2026-02-12 14:04:12.502 INFO (MainThread) [homeassistant.setup] Setup of domain system_health took 0.00 seconds
+2026-02-12 14:04:12.502 INFO (MainThread) [homeassistant.setup] Setting up input_button
+2026-02-12 14:04:12.503 INFO (MainThread) [homeassistant.setup] Setup of domain input_button took 0.00 seconds
+2026-02-12 14:04:12.503 INFO (MainThread) [homeassistant.setup] Setting up input_select
+2026-02-12 14:04:12.504 INFO (MainThread) [homeassistant.setup] Setup of domain input_select took 0.00 seconds
+2026-02-12 14:04:12.505 INFO (MainThread) [homeassistant.setup] Setup of domain person took 0.01 seconds
+2026-02-12 14:04:12.506 INFO (MainThread) [homeassistant.components.tts] Setting up google_translate.tts
+2026-02-12 14:04:12.604 INFO (MainThread) [homeassistant.setup] Setup of domain stream took 0.11 seconds
+2026-02-12 14:04:12.932 INFO (MainThread) [homeassistant.setup] Setting up camera
+2026-02-12 14:04:12.937 INFO (MainThread) [homeassistant.setup] Setup of domain camera took 0.00 seconds
+2026-02-12 14:04:12.942 INFO (MainThread) [homeassistant.setup] Setting up shopping_list
+2026-02-12 14:04:12.943 INFO (MainThread) [homeassistant.setup] Setup of domain shopping_list took 0.00 seconds
+2026-02-12 14:04:12.946 INFO (MainThread) [homeassistant.setup] Setting up input_datetime
+2026-02-12 14:04:12.946 INFO (MainThread) [homeassistant.setup] Setup of domain input_datetime took 0.00 seconds
+2026-02-12 14:04:12.950 INFO (MainThread) [homeassistant.setup] Setting up usage_prediction
+2026-02-12 14:04:12.950 INFO (MainThread) [homeassistant.setup] Setup of domain usage_prediction took 0.00 seconds
+2026-02-12 14:04:12.955 INFO (MainThread) [homeassistant.setup] Setting up my
+2026-02-12 14:04:12.955 INFO (MainThread) [homeassistant.setup] Setup of domain my took 0.00 seconds
+2026-02-12 14:04:12.957 INFO (MainThread) [homeassistant.setup] Setting up counter
+2026-02-12 14:04:12.958 INFO (MainThread) [homeassistant.setup] Setup of domain counter took 0.00 seconds
+2026-02-12 14:04:12.964 INFO (MainThread) [homeassistant.setup] Setting up hardware
+2026-02-12 14:04:12.981 INFO (MainThread) [homeassistant.setup] Setup of domain hardware took 0.02 seconds
+2026-02-12 14:04:13.065 INFO (MainThread) [homeassistant.setup] Setting up radio_browser
+2026-02-12 14:04:13.065 INFO (MainThread) [homeassistant.setup] Setup of domain radio_browser took 0.00 seconds
+2026-02-12 14:04:13.076 INFO (MainThread) [homeassistant.setup] Setting up energy
+2026-02-12 14:04:13.077 INFO (MainThread) [homeassistant.setup] Setup of domain energy took 0.00 seconds
+2026-02-12 14:04:13.081 INFO (MainThread) [homeassistant.setup] Setting up tag
+2026-02-12 14:04:13.081 INFO (MainThread) [homeassistant.setup] Setup of domain tag took 0.00 seconds
+2026-02-12 14:04:13.083 INFO (MainThread) [homeassistant.setup] Setting up input_text
+2026-02-12 14:04:13.084 INFO (MainThread) [homeassistant.setup] Setup of domain input_text took 0.00 seconds
+2026-02-12 14:04:13.088 INFO (MainThread) [homeassistant.setup] Setting up file
+2026-02-12 14:04:13.088 INFO (MainThread) [homeassistant.setup] Setup of domain file took 0.00 seconds
+2026-02-12 14:04:13.604 INFO (MainThread) [homeassistant.setup] Setting up hacs
+2026-02-12 14:04:13.604 INFO (MainThread) [homeassistant.setup] Setup of domain hacs took 0.00 seconds
+2026-02-12 14:04:13.604 INFO (MainThread) [custom_components.hacs] 
+-------------------------------------------------------------------
+HACS (Home Assistant Community Store)
+
+Version: 2.0.5
+This is a custom integration
+If you have any issues with this you need to open an issue here:
+https://github.com/hacs/integration/issues
+-------------------------------------------------------------------
+
+2026-02-12 14:04:13.629 INFO (MainThread) [custom_components.hacs] <HacsData restore> Restore started
+2026-02-12 14:04:13.690 INFO (MainThread) [custom_components.hacs] <HacsData restore> Restore done
+2026-02-12 14:04:13.690 INFO (MainThread) [custom_components.hacs] Enable category: integration
+2026-02-12 14:04:13.691 INFO (MainThread) [custom_components.hacs] Enable category: plugin
+2026-02-12 14:04:13.691 INFO (MainThread) [custom_components.hacs] Enable category: template
+2026-02-12 14:04:13.692 INFO (MainThread) [custom_components.hacs] Enable category: theme
+2026-02-12 14:04:13.978 INFO (MainThread) [homeassistant.setup] Setting up xiaomi_miot
+2026-02-12 14:04:13.984 INFO (MainThread) [homeassistant.setup] Setting up sun
+2026-02-12 14:04:13.984 INFO (MainThread) [homeassistant.setup] Setup of domain sun took 0.00 seconds
+2026-02-12 14:04:13.985 INFO (MainThread) [homeassistant.setup] Setting up binary_sensor
+2026-02-12 14:04:13.986 INFO (MainThread) [homeassistant.setup] Setup of domain binary_sensor took 0.00 seconds
+2026-02-12 14:04:13.987 INFO (MainThread) [homeassistant.components.binary_sensor] Setting up sun.binary_sensor
+2026-02-12 14:04:13.987 INFO (MainThread) [homeassistant.components.sensor] Setting up sun.sensor
+2026-02-12 14:04:13.992 INFO (MainThread) [homeassistant.setup] Setting up homeassistant_alerts
+2026-02-12 14:04:13.992 INFO (MainThread) [homeassistant.setup] Setup of domain homeassistant_alerts took 0.00 seconds
+2026-02-12 14:04:13.992 INFO (MainThread) [homeassistant.setup] Setup of domain xiaomi_miot took 0.01 seconds
+2026-02-12 14:04:13.996 INFO (MainThread) [homeassistant.setup] Setting up application_credentials
+2026-02-12 14:04:13.996 INFO (MainThread) [homeassistant.setup] Setup of domain application_credentials took 0.00 seconds
+2026-02-12 14:04:13.999 INFO (MainThread) [homeassistant.setup] Setting up schedule
+2026-02-12 14:04:14.000 INFO (MainThread) [homeassistant.setup] Setup of domain schedule took 0.00 seconds
+2026-02-12 14:04:14.005 INFO (MainThread) [homeassistant.setup] Setting up met
+2026-02-12 14:04:14.005 INFO (MainThread) [homeassistant.setup] Setup of domain met took 0.00 seconds
+2026-02-12 14:04:14.010 ERROR (MainThread) [homeassistant.components.camera] The generic platform for the camera integration does not support platform setup. Please remove it from your config.
+2026-02-12 14:04:14.048 INFO (MainThread) [homeassistant.setup] Setting up go2rtc
+2026-02-12 14:04:14.050 INFO (MainThread) [homeassistant.setup] Setting up todo
+2026-02-12 14:04:14.051 INFO (MainThread) [homeassistant.setup] Setup of domain todo took 0.00 seconds
+2026-02-12 14:04:14.053 INFO (MainThread) [homeassistant.components.todo] Setting up shopping_list.todo
+2026-02-12 14:04:14.058 INFO (MainThread) [homeassistant.components.sensor] Setting up energy.sensor
+2026-02-12 14:04:14.062 INFO (MainThread) [homeassistant.setup] Setting up analytics
+2026-02-12 14:04:14.063 INFO (MainThread) [homeassistant.setup] Setup of domain analytics took 0.00 seconds
+2026-02-12 14:04:14.065 INFO (MainThread) [homeassistant.setup] Setup of domain go2rtc took 0.02 seconds
+2026-02-12 14:04:14.088 INFO (MainThread) [homeassistant.setup] Setting up mobile_app
+2026-02-12 14:04:14.088 INFO (MainThread) [homeassistant.setup] Setting up notify
+2026-02-12 14:04:14.089 INFO (MainThread) [homeassistant.setup] Setup of domain notify took 0.00 seconds
+2026-02-12 14:04:14.089 INFO (MainThread) [homeassistant.setup] Setup of domain mobile_app took 0.00 seconds
+2026-02-12 14:04:14.089 INFO (MainThread) [homeassistant.components.notify] Setting up notify.mobile_app
+2026-02-12 14:04:14.089 INFO (MainThread) [homeassistant.setup] Setting up default_config
+2026-02-12 14:04:14.089 INFO (MainThread) [homeassistant.setup] Setup of domain default_config took 0.00 seconds
+2026-02-12 14:04:14.112 INFO (MainThread) [homeassistant.setup] Setting up switch
+2026-02-12 14:04:14.113 INFO (MainThread) [homeassistant.setup] Setup of domain switch took 0.00 seconds
+2026-02-12 14:04:14.113 INFO (MainThread) [homeassistant.setup] Setting up update
+2026-02-12 14:04:14.113 INFO (MainThread) [homeassistant.setup] Setup of domain update took 0.00 seconds
+2026-02-12 14:04:14.117 INFO (MainThread) [homeassistant.components.switch] Setting up hacs.switch
+2026-02-12 14:04:14.119 INFO (MainThread) [homeassistant.components.update] Setting up hacs.update
+2026-02-12 14:04:14.120 INFO (MainThread) [custom_components.hacs] Stage changed: setup
+2026-02-12 14:04:14.120 INFO (MainThread) [custom_components.hacs] Stage changed: waiting
+2026-02-12 14:04:14.120 INFO (MainThread) [custom_components.hacs] Setup complete, waiting for Home Assistant before startup tasks starts
+2026-02-12 14:04:15.105 INFO (MainThread) [custom_components.xiaomi_miot.core.device.zhimi.airp.rmb1] Converter for sensor.environment.relative_humidity already exists. Ignored.
+2026-02-12 14:04:15.105 INFO (MainThread) [custom_components.xiaomi_miot.core.device.zhimi.airp.rmb1] Converter for sensor.environment.pm2_5_density already exists. Ignored.
+2026-02-12 14:04:15.105 INFO (MainThread) [custom_components.xiaomi_miot.core.device.zhimi.airp.rmb1] Converter for sensor.environment.temperature already exists. Ignored.
+2026-02-12 14:04:15.105 INFO (MainThread) [custom_components.xiaomi_miot.core.device.zhimi.airp.rmb1] Converter for sensor.filter.filter_life_level already exists. Ignored.
+2026-02-12 14:04:15.105 INFO (MainThread) [custom_components.xiaomi_miot.core.device.zhimi.airp.rmb1] Converter for switch.alarm already exists. Ignored.
+2026-02-12 14:04:15.193 INFO (MainThread) [homeassistant.setup] Setting up weather
+2026-02-12 14:04:15.194 INFO (MainThread) [homeassistant.setup] Setup of domain weather took 0.00 seconds
+2026-02-12 14:04:15.196 INFO (MainThread) [homeassistant.components.weather] Setting up met.weather
+2026-02-12 14:04:15.235 INFO (MainThread) [custom_components.xiaomi_miot.core.device.zhimi.fan.za5] Converter for switch.fan.anion already exists. Ignored.
+2026-02-12 14:04:15.235 INFO (MainThread) [custom_components.xiaomi_miot.core.device.zhimi.fan.za5] Converter for switch.alarm already exists. Ignored.
+2026-02-12 14:04:15.810 INFO (MainThread) [homeassistant.setup] Setting up number
+2026-02-12 14:04:15.811 INFO (MainThread) [homeassistant.setup] Setup of domain number took 0.00 seconds
+2026-02-12 14:04:15.811 INFO (MainThread) [homeassistant.setup] Setting up select
+2026-02-12 14:04:15.812 INFO (MainThread) [homeassistant.setup] Setup of domain select took 0.00 seconds
+2026-02-12 14:04:15.812 INFO (MainThread) [homeassistant.setup] Setting up button
+2026-02-12 14:04:15.812 INFO (MainThread) [homeassistant.setup] Setup of domain button took 0.00 seconds
+2026-02-12 14:04:15.812 INFO (MainThread) [homeassistant.setup] Setting up text
+2026-02-12 14:04:15.812 INFO (MainThread) [homeassistant.setup] Setup of domain text took 0.00 seconds
+2026-02-12 14:04:15.812 INFO (MainThread) [homeassistant.setup] Setting up light
+2026-02-12 14:04:15.814 INFO (MainThread) [homeassistant.setup] Setup of domain light took 0.00 seconds
+2026-02-12 14:04:15.814 INFO (MainThread) [homeassistant.setup] Setting up fan
+2026-02-12 14:04:15.815 INFO (MainThread) [homeassistant.setup] Setup of domain fan took 0.00 seconds
+2026-02-12 14:04:15.815 INFO (MainThread) [homeassistant.setup] Setting up climate
+2026-02-12 14:04:15.817 INFO (MainThread) [homeassistant.setup] Setup of domain climate took 0.00 seconds
+2026-02-12 14:04:15.818 INFO (MainThread) [homeassistant.setup] Setting up cover
+2026-02-12 14:04:15.818 INFO (MainThread) [homeassistant.setup] Setup of domain cover took 0.00 seconds
+2026-02-12 14:04:15.819 INFO (MainThread) [homeassistant.setup] Setting up humidifier
+2026-02-12 14:04:15.819 INFO (MainThread) [homeassistant.setup] Setup of domain humidifier took 0.00 seconds
+2026-02-12 14:04:15.819 INFO (MainThread) [homeassistant.setup] Setting up media_player
+2026-02-12 14:04:15.821 INFO (MainThread) [homeassistant.setup] Setup of domain media_player took 0.00 seconds
+2026-02-12 14:04:15.821 INFO (MainThread) [homeassistant.setup] Setting up vacuum
+2026-02-12 14:04:15.822 INFO (MainThread) [homeassistant.setup] Setup of domain vacuum took 0.00 seconds
+2026-02-12 14:04:15.822 INFO (MainThread) [homeassistant.setup] Setting up water_heater
+2026-02-12 14:04:15.823 INFO (MainThread) [homeassistant.setup] Setup of domain water_heater took 0.00 seconds
+2026-02-12 14:04:15.823 INFO (MainThread) [homeassistant.setup] Setting up device_tracker
+2026-02-12 14:04:15.823 INFO (MainThread) [homeassistant.setup] Setup of domain device_tracker took 0.00 seconds
+2026-02-12 14:04:15.824 INFO (MainThread) [homeassistant.setup] Setting up remote
+2026-02-12 14:04:15.824 INFO (MainThread) [homeassistant.setup] Setup of domain remote took 0.00 seconds
+2026-02-12 14:04:15.828 INFO (MainThread) [homeassistant.setup] Setting up alarm_control_panel
+2026-02-12 14:04:15.828 INFO (MainThread) [homeassistant.setup] Setup of domain alarm_control_panel took 0.00 seconds
+2026-02-12 14:04:15.837 INFO (MainThread) [homeassistant.components.sensor] Setting up xiaomi_miot.sensor
+2026-02-12 14:04:15.837 INFO (MainThread) [custom_components.xiaomi_miot.core.hass_entry] New adder: ['sensor', <bound method EntityPlatform._async_schedule_add_entities_for_entry of <EntityPlatform domain=sensor platform_name=xiaomi_miot config_entry=<ConfigEntry entry_id=01KH8A56PJ6KMJCAWA5ZWF1J2V version=1 domain=xiaomi_miot title=Xiaomi: 1732393513 state=ConfigEntryState.SETUP_IN_PROGRESS unique_id=None>>>]
+2026-02-12 14:04:15.838 INFO (MainThread) [custom_components.xiaomi_miot.core.device.chuangmi.plug.m3] New entity: <entity sensor.chuangmi_m3_9f80_temperature=unavailable>
+2026-02-12 14:04:15.838 INFO (MainThread) [custom_components.xiaomi_miot.core.device.zhimi.airp.rmb1] Device registry updated: ['update', ('xiaomi_miot', 'ec:4d:3e:9c:a8:77-01KH8A56PJ6KMJCAWA5ZWF1J2V'), False]
+2026-02-12 14:04:15.839 INFO (MainThread) [custom_components.xiaomi_miot.core.device.zhimi.airp.rmb1] New entity: <entity sensor.zhimi_rmb1_a877_filter_life_level=unavailable>
+2026-02-12 14:04:15.839 INFO (MainThread) [custom_components.xiaomi_miot.core.device.zhimi.airp.rmb1] New entity: <entity sensor.zhimi_rmb1_a877_filter_left_time=unavailable>
+2026-02-12 14:04:15.839 INFO (MainThread) [custom_components.xiaomi_miot.core.device.zhimi.airp.rmb1] New entity: <entity sensor.zhimi_rmb1_a877_filter_used_time=unavailable>
+2026-02-12 14:04:15.839 INFO (MainThread) [custom_components.xiaomi_miot.core.device.zhimi.airp.rmb1] New entity: <entity sensor.zhimi_rmb1_a877_temperature=unavailable>
+2026-02-12 14:04:15.840 INFO (MainThread) [custom_components.xiaomi_miot.core.device.zhimi.airp.rmb1] New entity: <entity sensor.zhimi_rmb1_a877_relative_humidity=unavailable>
+2026-02-12 14:04:15.840 INFO (MainThread) [custom_components.xiaomi_miot.core.device.zhimi.airp.rmb1] New entity: <entity sensor.zhimi_rmb1_a877_pm25_density=unavailable>
+2026-02-12 14:04:15.840 INFO (MainThread) [custom_components.xiaomi_miot.core.device.zhimi.fan.za5] New entity: <entity sensor.zhimi_za5_1400_temperature=unavailable>
+2026-02-12 14:04:15.840 INFO (MainThread) [custom_components.xiaomi_miot.core.device.zhimi.fan.za5] New entity: <entity sensor.zhimi_za5_1400_relative_humidity=unavailable>
+2026-02-12 14:04:15.841 INFO (MainThread) [custom_components.xiaomi_miot.core.device.soocare.toothbrush.m1s] Device registry updated: ['update', ('xiaomi_miot', 'ef:d4:9a:e2:cf:ab-01KH8A56PJ6KMJCAWA5ZWF1J2V'), False]
+2026-02-12 14:04:15.841 INFO (MainThread) [custom_components.xiaomi_miot.core.device.soocare.toothbrush.m1s] New entity: <entity sensor.soocare_m1s_cfab_battery_level=unavailable>
+2026-02-12 14:04:15.841 INFO (MainThread) [custom_components.xiaomi_miot.core.device.soocare.toothbrush.m1s] New entity: <entity sensor.soocare_m1s_cfab_event=unavailable>
+2026-02-12 14:04:15.841 INFO (MainThread) [custom_components.xiaomi_miot.core.device.soocare.toothbrush.m1s] New entity: <entity sensor.soocare_m1s_cfab_score=unavailable>
+2026-02-12 14:04:15.841 INFO (MainThread) [custom_components.xiaomi_miot.core.device.soocare.toothbrush.m1s] New entity: <entity sensor.soocare_m1s_cfab_timestamp=unavailable>
+2026-02-12 14:04:15.845 INFO (MainThread) [homeassistant.components.binary_sensor] Setting up xiaomi_miot.binary_sensor
+2026-02-12 14:04:15.845 INFO (MainThread) [custom_components.xiaomi_miot.core.hass_entry] New adder: ['binary_sensor', <bound method EntityPlatform._async_schedule_add_entities_for_entry of <EntityPlatform domain=binary_sensor platform_name=xiaomi_miot config_entry=<ConfigEntry entry_id=01KH8A56PJ6KMJCAWA5ZWF1J2V version=1 domain=xiaomi_miot title=Xiaomi: 1732393513 state=ConfigEntryState.SETUP_IN_PROGRESS unique_id=None>>>]
+2026-02-12 14:04:15.846 INFO (MainThread) [homeassistant.components.switch] Setting up xiaomi_miot.switch
+2026-02-12 14:04:15.846 INFO (MainThread) [custom_components.xiaomi_miot.core.hass_entry] New adder: ['switch', <bound method EntityPlatform._async_schedule_add_entities_for_entry of <EntityPlatform domain=switch platform_name=xiaomi_miot config_entry=<ConfigEntry entry_id=01KH8A56PJ6KMJCAWA5ZWF1J2V version=1 domain=xiaomi_miot title=Xiaomi: 1732393513 state=ConfigEntryState.SETUP_IN_PROGRESS unique_id=None>>>]
+2026-02-12 14:04:15.847 INFO (MainThread) [custom_components.xiaomi_miot.core.device.chuangmi.plug.m3] New entity: <entity switch.chuangmi_m3_9f80_switch=unavailable>
+2026-02-12 14:04:15.848 INFO (MainThread) [custom_components.xiaomi_miot.core.device.zhimi.airp.rmb1] New entity: <entity switch.zhimi_rmb1_a877_alarm=unavailable>
+2026-02-12 14:04:15.848 INFO (MainThread) [custom_components.xiaomi_miot.core.device.zhimi.airp.rmb1] New entity: <entity switch.zhimi_rmb1_a877_physical_control_locked=unavailable>
+2026-02-12 14:04:15.848 INFO (MainThread) [custom_components.xiaomi_miot.core.device.zhimi.fan.za5] New entity: <entity switch.zhimi_za5_1400_anion=unavailable>
+2026-02-12 14:04:15.848 INFO (MainThread) [custom_components.xiaomi_miot.core.device.zhimi.fan.za5] New entity: <entity switch.zhimi_za5_1400_alarm=unavailable>
+2026-02-12 14:04:15.848 INFO (MainThread) [custom_components.xiaomi_miot.core.device.zhimi.fan.za5] New entity: <entity switch.zhimi_za5_1400_physical_control_locked=unavailable>
+2026-02-12 14:04:15.848 INFO (MainThread) [custom_components.xiaomi_miot.core.device.zhimi.fan.za5] New entity: <entity switch.zhimi_za5_1400_horizontal_swing=unavailable>
+2026-02-12 14:04:15.849 INFO (MainThread) [custom_components.xiaomi_miot.core.device.dmaker.fan.1c] Device registry updated: ['update', ('xiaomi_miot', 'c4:93:bb:21:8d:5d-01KH8A56PJ6KMJCAWA5ZWF1J2V'), False]
+2026-02-12 14:04:15.849 INFO (MainThread) [custom_components.xiaomi_miot.core.device.dmaker.fan.1c] New entity: <entity switch.dmaker_1c_8d5d_physical_control_locked=unavailable>
+2026-02-12 14:04:15.849 INFO (MainThread) [custom_components.xiaomi_miot.core.device.dmaker.fan.1c] New entity: <entity switch.dmaker_1c_8d5d_horizontal_swing=unavailable>
+2026-02-12 14:04:15.849 INFO (MainThread) [custom_components.xiaomi_miot.core.device.dmaker.fan.1c] New entity: <entity switch.dmaker_1c_8d5d_alarm=unavailable>
+2026-02-12 14:04:15.849 INFO (MainThread) [homeassistant.components.number] Setting up xiaomi_miot.number
+2026-02-12 14:04:15.849 INFO (MainThread) [custom_components.xiaomi_miot.core.hass_entry] New adder: ['number', <bound method EntityPlatform._async_schedule_add_entities_for_entry of <EntityPlatform domain=number platform_name=xiaomi_miot config_entry=<ConfigEntry entry_id=01KH8A56PJ6KMJCAWA5ZWF1J2V version=1 domain=xiaomi_miot title=Xiaomi: 1732393513 state=ConfigEntryState.SETUP_IN_PROGRESS unique_id=None>>>]
+2026-02-12 14:04:15.850 INFO (MainThread) [custom_components.xiaomi_miot.core.device.zhimi.airp.rmb1] New entity: <entity number.zhimi_rmb1_a877_favorite_level=unavailable>
+2026-02-12 14:04:15.850 INFO (MainThread) [custom_components.xiaomi_miot.core.device.zhimi.fan.za5] New entity: <entity number.zhimi_za5_1400_speed_level=unavailable>
+2026-02-12 14:04:15.850 INFO (MainThread) [custom_components.xiaomi_miot.core.device.dmaker.fan.1c] New entity: <entity number.dmaker_1c_8d5d_power_off_delay_time=unavailable>
+2026-02-12 14:04:15.851 INFO (MainThread) [homeassistant.components.select] Setting up xiaomi_miot.select
+2026-02-12 14:04:15.851 INFO (MainThread) [custom_components.xiaomi_miot.core.hass_entry] New adder: ['select', <bound method EntityPlatform._async_schedule_add_entities_for_entry of <EntityPlatform domain=select platform_name=xiaomi_miot config_entry=<ConfigEntry entry_id=01KH8A56PJ6KMJCAWA5ZWF1J2V version=1 domain=xiaomi_miot title=Xiaomi: 1732393513 state=ConfigEntryState.SETUP_IN_PROGRESS unique_id=None>>>]
+2026-02-12 14:04:15.851 INFO (MainThread) [custom_components.xiaomi_miot.core.device.zhimi.airp.rmb1] New entity: <entity select.zhimi_rmb1_a877_brightness=Bright>
+2026-02-12 14:04:15.851 INFO (MainThread) [homeassistant.components.button] Setting up xiaomi_miot.button
+2026-02-12 14:04:15.851 INFO (MainThread) [custom_components.xiaomi_miot.core.hass_entry] New adder: ['button', <bound method EntityPlatform._async_schedule_add_entities_for_entry of <EntityPlatform domain=button platform_name=xiaomi_miot config_entry=<ConfigEntry entry_id=01KH8A56PJ6KMJCAWA5ZWF1J2V version=1 domain=xiaomi_miot title=Xiaomi: 1732393513 state=ConfigEntryState.SETUP_IN_PROGRESS unique_id=None>>>]
+2026-02-12 14:04:15.851 INFO (MainThread) [custom_components.xiaomi_miot.core.device.chuangmi.plug.m3] New entity: <entity button.chuangmi_m3_9f80_info=unknown>
+2026-02-12 14:04:15.852 INFO (MainThread) [custom_components.xiaomi_miot.core.device.zhimi.airp.rmb1] New entity: <entity button.zhimi_rmb1_a877_info=unknown>
+2026-02-12 14:04:15.852 INFO (MainThread) [custom_components.xiaomi_miot.core.device.zhimi.fan.za5] New entity: <entity button.zhimi_za5_1400_info=unknown>
+2026-02-12 14:04:15.853 INFO (MainThread) [custom_components.xiaomi_miot.core.device.dmaker.fan.1c] New entity: <entity button.dmaker_1c_8d5d_info=unknown>
+2026-02-12 14:04:15.853 INFO (MainThread) [custom_components.xiaomi_miot.core.device.soocare.toothbrush.m1s] New entity: <entity button.soocare_m1s_cfab_info=unknown>
+2026-02-12 14:04:15.853 INFO (MainThread) [homeassistant.components.text] Setting up xiaomi_miot.text
+2026-02-12 14:04:15.853 INFO (MainThread) [custom_components.xiaomi_miot.core.hass_entry] New adder: ['text', <bound method EntityPlatform._async_schedule_add_entities_for_entry of <EntityPlatform domain=text platform_name=xiaomi_miot config_entry=<ConfigEntry entry_id=01KH8A56PJ6KMJCAWA5ZWF1J2V version=1 domain=xiaomi_miot title=Xiaomi: 1732393513 state=ConfigEntryState.SETUP_IN_PROGRESS unique_id=None>>>]
+2026-02-12 14:04:15.853 INFO (MainThread) [homeassistant.components.light] Setting up xiaomi_miot.light
+2026-02-12 14:04:15.853 INFO (MainThread) [custom_components.xiaomi_miot.core.hass_entry] New adder: ['light', <bound method EntityPlatform._async_schedule_add_entities_for_entry of <EntityPlatform domain=light platform_name=xiaomi_miot config_entry=<ConfigEntry entry_id=01KH8A56PJ6KMJCAWA5ZWF1J2V version=1 domain=xiaomi_miot title=Xiaomi: 1732393513 state=ConfigEntryState.SETUP_IN_PROGRESS unique_id=None>>>]
+2026-02-12 14:04:15.853 INFO (MainThread) [custom_components.xiaomi_miot.core.device.chuangmi.plug.m3] New entity: <entity light.chuangmi_m3_9f80_indicator_light=unavailable>
+2026-02-12 14:04:15.854 INFO (MainThread) [custom_components.xiaomi_miot.core.device.zhimi.fan.za5] New entity: <entity light.zhimi_za5_1400_indicator_light=unavailable>
+2026-02-12 14:04:15.854 INFO (MainThread) [homeassistant.components.fan] Setting up xiaomi_miot.fan
+2026-02-12 14:04:15.855 INFO (MainThread) [custom_components.xiaomi_miot.core.hass_entry] New adder: ['fan', <bound method EntityPlatform._async_schedule_add_entities_for_entry of <EntityPlatform domain=fan platform_name=xiaomi_miot config_entry=<ConfigEntry entry_id=01KH8A56PJ6KMJCAWA5ZWF1J2V version=1 domain=xiaomi_miot title=Xiaomi: 1732393513 state=ConfigEntryState.SETUP_IN_PROGRESS unique_id=None>>>]
+2026-02-12 14:04:15.855 INFO (MainThread) [custom_components.xiaomi_miot.core.device.zhimi.airp.rmb1] New entity: <entity fan.zhimi_rmb1_a877_air_purifier=unavailable>
+2026-02-12 14:04:15.856 INFO (MainThread) [custom_components.xiaomi_miot.core.device.zhimi.fan.za5] New entity: <entity fan.zhimi_za5_1400_fan=unavailable>
+2026-02-12 14:04:15.856 INFO (MainThread) [custom_components.xiaomi_miot.core.device.dmaker.fan.1c] New entity: <entity fan.dmaker_1c_8d5d_fan=unavailable>
+2026-02-12 14:04:15.857 INFO (MainThread) [homeassistant.components.climate] Setting up xiaomi_miot.climate
+2026-02-12 14:04:15.857 INFO (MainThread) [custom_components.xiaomi_miot.core.hass_entry] New adder: ['climate', <bound method EntityPlatform._async_schedule_add_entities_for_entry of <EntityPlatform domain=climate platform_name=xiaomi_miot config_entry=<ConfigEntry entry_id=01KH8A56PJ6KMJCAWA5ZWF1J2V version=1 domain=xiaomi_miot title=Xiaomi: 1732393513 state=ConfigEntryState.SETUP_IN_PROGRESS unique_id=None>>>]
+2026-02-12 14:04:15.857 INFO (MainThread) [homeassistant.components.cover] Setting up xiaomi_miot.cover
+2026-02-12 14:04:15.857 INFO (MainThread) [custom_components.xiaomi_miot.core.hass_entry] New adder: ['cover', <bound method EntityPlatform._async_schedule_add_entities_for_entry of <EntityPlatform domain=cover platform_name=xiaomi_miot config_entry=<ConfigEntry entry_id=01KH8A56PJ6KMJCAWA5ZWF1J2V version=1 domain=xiaomi_miot title=Xiaomi: 1732393513 state=ConfigEntryState.SETUP_IN_PROGRESS unique_id=None>>>]
+2026-02-12 14:04:15.857 INFO (MainThread) [homeassistant.components.humidifier] Setting up xiaomi_miot.humidifier
+2026-02-12 14:04:15.857 INFO (MainThread) [custom_components.xiaomi_miot.core.hass_entry] New adder: ['humidifier', <bound method EntityPlatform._async_schedule_add_entities_for_entry of <EntityPlatform domain=humidifier platform_name=xiaomi_miot config_entry=<ConfigEntry entry_id=01KH8A56PJ6KMJCAWA5ZWF1J2V version=1 domain=xiaomi_miot title=Xiaomi: 1732393513 state=ConfigEntryState.SETUP_IN_PROGRESS unique_id=None>>>]
+2026-02-12 14:04:15.857 INFO (MainThread) [homeassistant.components.media_player] Setting up xiaomi_miot.media_player
+2026-02-12 14:04:15.857 INFO (MainThread) [custom_components.xiaomi_miot.core.hass_entry] New adder: ['media_player', <bound method EntityPlatform._async_schedule_add_entities_for_entry of <EntityPlatform domain=media_player platform_name=xiaomi_miot config_entry=<ConfigEntry entry_id=01KH8A56PJ6KMJCAWA5ZWF1J2V version=1 domain=xiaomi_miot title=Xiaomi: 1732393513 state=ConfigEntryState.SETUP_IN_PROGRESS unique_id=None>>>]
+2026-02-12 14:04:15.859 INFO (MainThread) [homeassistant.components.camera] Setting up xiaomi_miot.camera
+2026-02-12 14:04:15.859 INFO (MainThread) [custom_components.xiaomi_miot.core.hass_entry] New adder: ['camera', <bound method EntityPlatform._async_schedule_add_entities_for_entry of <EntityPlatform domain=camera platform_name=xiaomi_miot config_entry=<ConfigEntry entry_id=01KH8A56PJ6KMJCAWA5ZWF1J2V version=1 domain=xiaomi_miot title=Xiaomi: 1732393513 state=ConfigEntryState.SETUP_IN_PROGRESS unique_id=None>>>]
+2026-02-12 14:04:15.859 INFO (MainThread) [homeassistant.components.vacuum] Setting up xiaomi_miot.vacuum
+2026-02-12 14:04:15.859 INFO (MainThread) [custom_components.xiaomi_miot.core.hass_entry] New adder: ['vacuum', <bound method EntityPlatform._async_schedule_add_entities_for_entry of <EntityPlatform domain=vacuum platform_name=xiaomi_miot config_entry=<ConfigEntry entry_id=01KH8A56PJ6KMJCAWA5ZWF1J2V version=1 domain=xiaomi_miot title=Xiaomi: 1732393513 state=ConfigEntryState.SETUP_IN_PROGRESS unique_id=None>>>]
+2026-02-12 14:04:15.860 INFO (MainThread) [homeassistant.components.water_heater] Setting up xiaomi_miot.water_heater
+2026-02-12 14:04:15.860 INFO (MainThread) [custom_components.xiaomi_miot.core.hass_entry] New adder: ['water_heater', <bound method EntityPlatform._async_schedule_add_entities_for_entry of <EntityPlatform domain=water_heater platform_name=xiaomi_miot config_entry=<ConfigEntry entry_id=01KH8A56PJ6KMJCAWA5ZWF1J2V version=1 domain=xiaomi_miot title=Xiaomi: 1732393513 state=ConfigEntryState.SETUP_IN_PROGRESS unique_id=None>>>]
+2026-02-12 14:04:15.861 INFO (MainThread) [homeassistant.components.device_tracker] Setting up xiaomi_miot.device_tracker
+2026-02-12 14:04:15.861 INFO (MainThread) [custom_components.xiaomi_miot.core.hass_entry] New adder: ['device_tracker', <bound method EntityPlatform._async_schedule_add_entities_for_entry of <EntityPlatform domain=device_tracker platform_name=xiaomi_miot config_entry=<ConfigEntry entry_id=01KH8A56PJ6KMJCAWA5ZWF1J2V version=1 domain=xiaomi_miot title=Xiaomi: 1732393513 state=ConfigEntryState.SETUP_IN_PROGRESS unique_id=None>>>]
+2026-02-12 14:04:15.861 INFO (MainThread) [homeassistant.components.remote] Setting up xiaomi_miot.remote
+2026-02-12 14:04:15.861 INFO (MainThread) [custom_components.xiaomi_miot.core.hass_entry] New adder: ['remote', <bound method EntityPlatform._async_schedule_add_entities_for_entry of <EntityPlatform domain=remote platform_name=xiaomi_miot config_entry=<ConfigEntry entry_id=01KH8A56PJ6KMJCAWA5ZWF1J2V version=1 domain=xiaomi_miot title=Xiaomi: 1732393513 state=ConfigEntryState.SETUP_IN_PROGRESS unique_id=None>>>]
+2026-02-12 14:04:15.861 INFO (MainThread) [homeassistant.components.alarm_control_panel] Setting up xiaomi_miot.alarm_control_panel
+2026-02-12 14:04:15.862 INFO (MainThread) [custom_components.xiaomi_miot.core.hass_entry] New adder: ['alarm_control_panel', <bound method EntityPlatform._async_schedule_add_entities_for_entry of <EntityPlatform domain=alarm_control_panel platform_name=xiaomi_miot config_entry=<ConfigEntry entry_id=01KH8A56PJ6KMJCAWA5ZWF1J2V version=1 domain=xiaomi_miot title=Xiaomi: 1732393513 state=ConfigEntryState.SETUP_IN_PROGRESS unique_id=None>>>]
+2026-02-12 14:04:16.341 INFO (MainThread) [custom_components.xiaomi_miot.core.device.zhimi.airp.rmb1] Device registry updated: ['update', ('xiaomi_miot', 'ec:4d:3e:9c:a8:77-01KH8A56PJ6KMJCAWA5ZWF1J2V'), False]
+2026-02-12 14:04:16.341 INFO (MainThread) [custom_components.xiaomi_miot.core.device.zhimi.airp.rmb1] State updater: 2.2.10 🛜
+2026-02-12 14:04:16.342 INFO (MainThread) [custom_components.xiaomi_miot.core.device.zhimi.airp.rmb1] Device updated: {'fan.air_purifier.on': True, 'air_purifier.on': True, 'air_purifier.mode': 'Auto', 'only_info': False}
+2026-02-12 14:04:16.415 INFO (MainThread) [custom_components.xiaomi_miot.sensor] Get xiaomi scene history for 1732393513 194001011318 failed: {'code': 0, 'message': '成功', 'result': {'history': []}}
+2026-02-12 14:04:16.718 INFO (MainThread) [custom_components.xiaomi_miot.core.device.dmaker.fan.1c] Device registry updated: ['update', ('xiaomi_miot', 'c4:93:bb:21:8d:5d-01KH8A56PJ6KMJCAWA5ZWF1J2V'), False]
+2026-02-12 14:04:16.719 INFO (MainThread) [custom_components.xiaomi_miot.core.device.dmaker.fan.1c] State updater: 2.1.3 🛜
+2026-02-12 14:04:16.719 INFO (MainThread) [custom_components.xiaomi_miot.core.device.dmaker.fan.1c] Device updated: {'fan.fan.on': False, 'fan.on': False, 'fan.fan_level': '1', 'fan.mode': 'Straight Wind', 'only_info': False}
+2026-02-12 14:04:17.074 INFO (MainThread) [custom_components.xiaomi_miot.core.device.soocare.toothbrush.m1s] Device registry updated: ['update', ('xiaomi_miot', 'ef:d4:9a:e2:cf:ab-01KH8A56PJ6KMJCAWA5ZWF1J2V'), False]
+2026-02-12 14:04:17.074 INFO (MainThread) [custom_components.xiaomi_miot.core.device.soocare.toothbrush.m1s] State updater: 1.1.4_0000 ☁️
+2026-02-12 14:04:17.074 INFO (MainThread) [custom_components.xiaomi_miot.core.device.soocare.toothbrush.m1s] Device updated: {'only_info': False}
+2026-02-12 14:04:17.403 INFO (MainThread) [custom_components.xiaomi_miot.core.device.zhimi.airp.rmb1] Device updated: {'sensor.filter.filter_life_level': 0, 'sensor.filter.filter_used_time': 310, 'sensor.filter.filter_left_time': 0, 'only_info': False}
+2026-02-12 14:04:17.660 INFO (MainThread) [custom_components.xiaomi_miot.core.device.soocare.toothbrush.m1s] Device updated: {'sensor.event': 'start', 'sensor.timestamp': '1970-01-01T08:00:00+08:00', 'only_info': False}
+2026-02-12 14:04:17.695 INFO (MainThread) [custom_components.xiaomi_miot.core.device.dmaker.fan.1c] Device updated: {'fan.horizontal_swing': False, 'switch.fan.horizontal_swing': False, 'number.fan.off_delay_time': 0, 'only_info': False}
+2026-02-12 14:04:18.521 INFO (MainThread) [custom_components.xiaomi_miot.core.device.zhimi.airp.rmb1] Device updated: {'sensor.environment.relative_humidity': 78, 'sensor.environment.pm2_5_density': 5, 'sensor.environment.temperature': 26, 'switch.alarm': False, 'switch.physical_controls_locked': False, 'select.screen.brightness': 'Bright', 'custom_service.favorite_level': 14, 'number.custom_service.favorite_level': 14, 'only_info': False}
+2026-02-12 14:04:18.694 INFO (MainThread) [custom_components.xiaomi_miot.core.device.dmaker.fan.1c] Device updated: {'switch.fan.alarm': True, 'switch.physical_controls_locked': False, 'only_info': False}
+2026-02-12 14:04:20.853 INFO (MainThread) [custom_components.xiaomi_miot.core.device.chuangmi.plug.m3] Update all coordinators: ['44:23:7c:f8:9f:80-01KH8A56PJ6KMJCAWA5ZWF1J2V-miot_status']
+2026-02-12 14:04:20.853 INFO (MainThread) [custom_components.xiaomi_miot.core.device.zhimi.airp.rmb1] Update all coordinators: ['ec:4d:3e:9c:a8:77-01KH8A56PJ6KMJCAWA5ZWF1J2V-chunk_1', 'ec:4d:3e:9c:a8:77-01KH8A56PJ6KMJCAWA5ZWF1J2V-chunk_2', 'ec:4d:3e:9c:a8:77-01KH8A56PJ6KMJCAWA5ZWF1J2V-miot_status']
+2026-02-12 14:04:20.853 INFO (MainThread) [custom_components.xiaomi_miot.core.device.zhimi.fan.za5] Update all coordinators: ['7c:c2:94:3e:14:00-01KH8A56PJ6KMJCAWA5ZWF1J2V-chunk_1', '7c:c2:94:3e:14:00-01KH8A56PJ6KMJCAWA5ZWF1J2V-chunk_2', '7c:c2:94:3e:14:00-01KH8A56PJ6KMJCAWA5ZWF1J2V-chunk_3', '7c:c2:94:3e:14:00-01KH8A56PJ6KMJCAWA5ZWF1J2V-chunk_4', '7c:c2:94:3e:14:00-01KH8A56PJ6KMJCAWA5ZWF1J2V-miot_status']
+2026-02-12 14:04:20.854 INFO (MainThread) [custom_components.xiaomi_miot.core.device.dmaker.fan.1c] Update all coordinators: ['c4:93:bb:21:8d:5d-01KH8A56PJ6KMJCAWA5ZWF1J2V-chunk_1', 'c4:93:bb:21:8d:5d-01KH8A56PJ6KMJCAWA5ZWF1J2V-chunk_2', 'c4:93:bb:21:8d:5d-01KH8A56PJ6KMJCAWA5ZWF1J2V-miot_status']
+2026-02-12 14:04:20.854 INFO (MainThread) [custom_components.xiaomi_miot.core.device.soocare.toothbrush.m1s] Update all coordinators: ['ef:d4:9a:e2:cf:ab-01KH8A56PJ6KMJCAWA5ZWF1J2V-miot_status', 'ef:d4:9a:e2:cf:ab-01KH8A56PJ6KMJCAWA5ZWF1J2V-update_miio_cloud_props']
+2026-02-12 14:04:24.995 ERROR (MainThread) [custom_components.xiaomi_miot.core.device.chuangmi.plug.m3] Mi Smart Plug (Wi-Fi) Basic: Unable to discover the device 192.168.100.227, mapping: {'switch.on': {'siid': 2, 'piid': 1}, 'switch.temperature': {'siid': 2, 'piid': 2}, 'indicator_light.on': {'siid': 3, 'piid': 1}}, max_properties: 3/3
+2026-02-12 14:04:25.253 ERROR (MainThread) [custom_components.xiaomi_miot.core.device.zhimi.fan.za5] Fan: Unable to discover the device 192.168.100.95, mapping: {'fan.on': {'siid': 2, 'piid': 1}, 'fan.mode': {'siid': 2, 'piid': 7}, 'custom_service.speed_level': {'siid': 6, 'piid': 8}}, max_properties: 1/3
+2026-02-12 14:04:26.255 ERROR (MainThread) [custom_components.xiaomi_miot.core.device.zhimi.fan.za5] Fan: Unable to discover the device 192.168.100.95, mapping: {'fan.fan_level': {'siid': 2, 'piid': 2}, 'fan.horizontal_swing': {'siid': 2, 'piid': 3}, 'fan.horizontal_angle': {'siid': 2, 'piid': 5}, 'fan.off_delay': {'siid': 2, 'piid': 10}, 'fan.anion': {'siid': 2, 'piid': 11}, 'custom_service.speed_now': {'siid': 6, 'piid': 4}}, max_properties: 1/6
+2026-02-12 14:04:26.274 INFO (MainThread) [custom_components.xiaomi_miot.core.device.zhimi.airp.rmb1] Device updated: {'fan.air_purifier.on': True, 'air_purifier.on': True, 'air_purifier.mode': 'Auto', 'only_info': False}
+2026-02-12 14:04:27.000 INFO (MainThread) [custom_components.xiaomi_miot.core.device.dmaker.fan.1c] Device updated: {'fan.fan.on': False, 'fan.on': False, 'fan.fan_level': '1', 'fan.mode': 'Straight Wind', 'only_info': False}
+2026-02-12 14:04:27.235 INFO (MainThread) [custom_components.xiaomi_miot.core.device.soocare.toothbrush.m1s] Device updated: {'only_info': False}
+2026-02-12 14:04:27.255 ERROR (MainThread) [custom_components.xiaomi_miot.core.device.zhimi.fan.za5] Fan: Unable to discover the device 192.168.100.95, mapping: {'environment.relative_humidity': {'siid': 7, 'piid': 1}, 'environment.temperature': {'siid': 7, 'piid': 7}}, max_properties: 1/2
+2026-02-12 14:04:27.737 INFO (MainThread) [custom_components.xiaomi_miot.core.device.soocare.toothbrush.m1s] Device updated: {'sensor.event': 'start', 'sensor.timestamp': '1970-01-01T08:00:00+08:00', 'only_info': False}
+2026-02-12 14:04:27.809 INFO (MainThread) [custom_components.xiaomi_miot.core.device.zhimi.airp.rmb1] Device updated: {'sensor.filter.filter_life_level': 0, 'sensor.filter.filter_used_time': 310, 'sensor.filter.filter_left_time': 0, 'only_info': False}
+2026-02-12 14:04:27.982 INFO (MainThread) [custom_components.xiaomi_miot.core.device.dmaker.fan.1c] Device updated: {'fan.horizontal_swing': False, 'switch.fan.horizontal_swing': False, 'number.fan.off_delay_time': 0, 'only_info': False}
+2026-02-12 14:04:28.257 INFO (MainThread) [custom_components.xiaomi_miot.core.device.zhimi.fan.za5] Fan: Unable to discover the device 192.168.100.95, mapping: {'custom_service.battery_state': {'siid': 6, 'piid': 2}, 'custom_service.ac_state': {'siid': 6, 'piid': 5}}, max_properties: 1/2
+2026-02-12 14:04:28.979 INFO (MainThread) [custom_components.xiaomi_miot.core.device.dmaker.fan.1c] Device updated: {'switch.fan.alarm': True, 'switch.physical_controls_locked': False, 'only_info': False}
+2026-02-12 14:04:29.143 INFO (MainThread) [custom_components.xiaomi_miot.core.device.zhimi.airp.rmb1] Device updated: {'sensor.environment.relative_humidity': 78, 'sensor.environment.pm2_5_density': 5, 'sensor.environment.temperature': 26, 'switch.alarm': False, 'switch.physical_controls_locked': False, 'select.screen.brightness': 'Bright', 'custom_service.favorite_level': 14, 'number.custom_service.favorite_level': 14, 'only_info': False}
+2026-02-12 14:04:29.259 INFO (MainThread) [custom_components.xiaomi_miot.core.device.zhimi.fan.za5] Fan: Unable to discover the device 192.168.100.95, mapping: {'physical_controls_locked': {'siid': 3, 'piid': 1}, 'indicator_light.brightness': {'siid': 4, 'piid': 3}, 'alarm': {'siid': 5, 'piid': 1}}, max_properties: 1/3
+2026-02-12 14:04:29.260 INFO (MainThread) [homeassistant.bootstrap] Home Assistant initialized in 18.40s
+2026-02-12 14:04:29.260 INFO (MainThread) [homeassistant.core] Starting Home Assistant 2026.2.1
+2026-02-12 14:04:29.261 INFO (MainThread) [custom_components.hacs] Stage changed: startup
+2026-02-12 14:04:29.267 INFO (MainThread) [custom_components.hacs] Loading removed repositories
+2026-02-12 14:04:29.565 INFO (MainThread) [custom_components.hacs] Loading known repositories
+2026-02-12 14:04:29.991 INFO (MainThread) [custom_components.hacs] Stage changed: running
+2026-02-12 14:04:36.202 INFO (MainThread) [custom_components.xiaomi_miot.core.device.zhimi.airp.rmb1] Device updated: {'fan.air_purifier.on': True, 'air_purifier.on': True, 'air_purifier.mode': 'Auto', 'only_info': False}
+2026-02-12 14:04:39.864 ERROR (MainThread) [custom_components.xiaomi_miot.core.device.chuangmi.plug.m3] Mi Smart Plug (Wi-Fi) Basic: Unable to discover the device 192.168.100.227, mapping: {'switch.on': {'siid': 2, 'piid': 1}, 'switch.temperature': {'siid': 2, 'piid': 2}, 'indicator_light.on': {'siid': 3, 'piid': 1}}, max_properties: 3/3
+2026-02-12 14:04:39.865 INFO (MainThread) [custom_components.xiaomi_miot.core.device.zhimi.fan.za5] Fan: Unable to discover the device 192.168.100.95, mapping: {'fan.on': {'siid': 2, 'piid': 1}, 'fan.mode': {'siid': 2, 'piid': 7}, 'custom_service.speed_level': {'siid': 6, 'piid': 8}}, max_properties: 1/3
+2026-02-12 14:04:39.865 INFO (MainThread) [custom_components.xiaomi_miot.core.device.zhimi.fan.za5] Fan: Unable to discover the device 192.168.100.95, mapping: {'fan.fan_level': {'siid': 2, 'piid': 2}, 'fan.horizontal_swing': {'siid': 2, 'piid': 3}, 'fan.horizontal_angle': {'siid': 2, 'piid': 5}, 'fan.off_delay': {'siid': 2, 'piid': 10}, 'fan.anion': {'siid': 2, 'piid': 11}, 'custom_service.speed_now': {'siid': 6, 'piid': 4}}, max_properties: 1/6
+2026-02-12 14:04:39.865 INFO (MainThread) [custom_components.xiaomi_miot.core.device.zhimi.fan.za5] Fan: Unable to discover the device 192.168.100.95, mapping: {'environment.relative_humidity': {'siid': 7, 'piid': 1}, 'environment.temperature': {'siid': 7, 'piid': 7}}, max_properties: 1/2
+2026-02-12 14:04:39.866 INFO (MainThread) [custom_components.xiaomi_miot.core.device.zhimi.fan.za5] Fan: Unable to discover the device 192.168.100.95, mapping: {'custom_service.battery_state': {'siid': 6, 'piid': 2}, 'custom_service.ac_state': {'siid': 6, 'piid': 5}}, max_properties: 1/2
+2026-02-12 14:04:39.866 INFO (MainThread) [custom_components.xiaomi_miot.core.device.zhimi.fan.za5] Fan: Unable to discover the device 192.168.100.95, mapping: {'physical_controls_locked': {'siid': 3, 'piid': 1}, 'indicator_light.brightness': {'siid': 4, 'piid': 3}, 'alarm': {'siid': 5, 'piid': 1}}, max_properties: 1/3
+2026-02-12 14:04:43.414 INFO (MainThread) [custom_components.xiaomi_miot.core.device.dmaker.fan.1c] Device updated: {'fan.fan.on': False, 'fan.on': False, 'fan.fan_level': '1', 'fan.mode': 'Straight Wind', 'only_info': False}
+2026-02-12 14:04:46.174 INFO (MainThread) [custom_components.xiaomi_miot.core.device.zhimi.airp.rmb1] Device updated: {'fan.air_purifier.on': True, 'air_purifier.on': True, 'air_purifier.mode': 'Auto', 'only_info': False}
+2026-02-12 14:04:49.347 INFO (MainThread) [custom_components.xiaomi_miot.core.device.dmaker.fan.1c] Device updated: {'fan.horizontal_swing': False, 'switch.fan.horizontal_swing': False, 'number.fan.off_delay_time': 0, 'only_info': False}
+2026-02-12 14:04:56.307 INFO (MainThread) [custom_components.xiaomi_miot.core.device.zhimi.airp.rmb1] Device updated: {'fan.air_purifier.on': True, 'air_purifier.on': True, 'air_purifier.mode': 'Auto', 'only_info': False}
+2026-02-12 14:04:59.443 INFO (MainThread) [custom_components.xiaomi_miot.core.device.dmaker.fan.1c] Device updated: {'fan.fan.on': False, 'fan.on': False, 'fan.fan_level': '1', 'fan.mode': 'Straight Wind', 'only_info': False}
+2026-02-12 14:05:06.241 INFO (MainThread) [custom_components.xiaomi_miot.core.device.zhimi.airp.rmb1] Device updated: {'fan.air_purifier.on': True, 'air_purifier.on': True, 'air_purifier.mode': 'Auto', 'only_info': False}
+2026-02-12 14:05:09.109 INFO (MainThread) [custom_components.xiaomi_miot.core.device.zhimi.fan.za5] Fan: Unable to discover the device 192.168.100.95, mapping: {'fan.on': {'siid': 2, 'piid': 1}, 'fan.mode': {'siid': 2, 'piid': 7}, 'custom_service.speed_level': {'siid': 6, 'piid': 8}}, max_properties: 1/3
+2026-02-12 14:05:10.317 INFO (MainThread) [custom_components.xiaomi_miot.core.device.dmaker.fan.1c] Device updated: {'fan.horizontal_swing': False, 'switch.fan.horizontal_swing': False, 'number.fan.off_delay_time': 0, 'only_info': False}
+2026-02-12 14:05:15.462 INFO (MainThread) [custom_components.xiaomi_miot.core.device.dmaker.fan.1c] Device updated: {'fan.fan.on': False, 'fan.on': False, 'fan.fan_level': '1', 'fan.mode': 'Straight Wind', 'only_info': False}
+2026-02-12 14:05:16.151 INFO (MainThread) [custom_components.xiaomi_miot.core.device.zhimi.airp.rmb1] Device updated: {'fan.air_purifier.on': True, 'air_purifier.on': True, 'air_purifier.mode': 'Auto', 'only_info': False}
+2026-02-12 14:05:26.390 INFO (MainThread) [custom_components.xiaomi_miot.core.device.zhimi.airp.rmb1] Device updated: {'fan.air_purifier.on': True, 'air_purifier.on': True, 'air_purifier.mode': 'Auto', 'only_info': False}
+2026-02-12 14:05:27.454 INFO (MainThread) [custom_components.xiaomi_miot.core.device.soocare.toothbrush.m1s] Device updated: {'only_info': False}
+2026-02-12 14:05:29.808 INFO (MainThread) [custom_components.xiaomi_miot.core.device.zhimi.airp.rmb1] Device updated: {'sensor.environment.relative_humidity': 78, 'sensor.environment.pm2_5_density': 4, 'sensor.environment.temperature': 26, 'switch.alarm': False, 'switch.physical_controls_locked': False, 'select.screen.brightness': 'Bright', 'custom_service.favorite_level': 14, 'number.custom_service.favorite_level': 14, 'only_info': False}
+2026-02-12 14:05:31.287 INFO (MainThread) [custom_components.xiaomi_miot.core.device.dmaker.fan.1c] Device updated: {'fan.horizontal_swing': False, 'switch.fan.horizontal_swing': False, 'number.fan.off_delay_time': 0, 'only_info': False}
+2026-02-12 14:05:31.491 INFO (MainThread) [custom_components.xiaomi_miot.core.device.dmaker.fan.1c] Device updated: {'fan.fan.on': False, 'fan.on': False, 'fan.fan_level': '1', 'fan.mode': 'Straight Wind', 'only_info': False}
+2026-02-12 14:05:36.416 INFO (MainThread) [custom_components.xiaomi_miot.core.device.zhimi.airp.rmb1] Device updated: {'fan.air_purifier.on': True, 'air_purifier.on': True, 'air_purifier.mode': 'Auto', 'only_info': False}
+2026-02-12 14:05:39.108 INFO (MainThread) [custom_components.xiaomi_miot.core.device.zhimi.fan.za5] Fan: Unable to discover the device 192.168.100.95, mapping: {'fan.on': {'siid': 2, 'piid': 1}, 'fan.mode': {'siid': 2, 'piid': 7}, 'custom_service.speed_level': {'siid': 6, 'piid': 8}}, max_properties: 1/3
+2026-02-12 14:05:46.154 INFO (MainThread) [custom_components.xiaomi_miot.core.device.zhimi.airp.rmb1] Device updated: {'fan.air_purifier.on': True, 'air_purifier.on': True, 'air_purifier.mode': 'Auto', 'only_info': False}
+2026-02-12 14:05:47.313 INFO (MainThread) [custom_components.xiaomi_miot.core.device.dmaker.fan.1c] Device updated: {'fan.fan.on': False, 'fan.on': False, 'fan.fan_level': '1', 'fan.mode': 'Straight Wind', 'only_info': False}
+2026-02-12 14:05:48.176 ERROR (MainThread) [custom_components.xiaomi_miot.core.device.chuangmi.plug.m3] Mi Smart Plug (Wi-Fi) Basic: Unable to discover the device 192.168.100.227, mapping: {'switch.on': {'siid': 2, 'piid': 1}, 'switch.temperature': {'siid': 2, 'piid': 2}, 'indicator_light.on': {'siid': 3, 'piid': 1}}, max_properties: 3/3
+2026-02-12 14:05:49.201 INFO (MainThread) [custom_components.xiaomi_miot.core.device.zhimi.fan.za5] Fan: Unable to discover the device 192.168.100.95, mapping: {'fan.fan_level': {'siid': 2, 'piid': 2}, 'fan.horizontal_swing': {'siid': 2, 'piid': 3}, 'fan.horizontal_angle': {'siid': 2, 'piid': 5}, 'fan.off_delay': {'siid': 2, 'piid': 10}, 'fan.anion': {'siid': 2, 'piid': 11}, 'custom_service.speed_now': {'siid': 6, 'piid': 4}}, max_properties: 1/6
+2026-02-12 14:05:52.254 INFO (MainThread) [custom_components.xiaomi_miot.core.device.dmaker.fan.1c] Device updated: {'fan.horizontal_swing': False, 'switch.fan.horizontal_swing': False, 'number.fan.off_delay_time': 0, 'only_info': False}
+2026-02-12 14:05:56.079 INFO (MainThread) [custom_components.xiaomi_miot.core.device.zhimi.airp.rmb1] Device updated: {'fan.air_purifier.on': True, 'air_purifier.on': True, 'air_purifier.mode': 'Auto', 'only_info': False}
+2026-02-12 14:05:59.585 INFO (MainThread) [custom_components.xiaomi_miot.core.device.dmaker.fan.1c] Device updated: {'switch.fan.alarm': True, 'switch.physical_controls_locked': False, 'only_info': False}
+2026-02-12 14:06:03.342 INFO (MainThread) [custom_components.xiaomi_miot.core.device.dmaker.fan.1c] Device updated: {'fan.fan.on': False, 'fan.on': False, 'fan.fan_level': '1', 'fan.mode': 'Straight Wind', 'only_info': False}
+2026-02-12 14:06:06.253 INFO (MainThread) [custom_components.xiaomi_miot.core.device.zhimi.airp.rmb1] Device updated: {'fan.air_purifier.on': True, 'air_purifier.on': True, 'air_purifier.mode': 'Auto', 'only_info': False}
+2026-02-12 14:06:09.101 INFO (MainThread) [custom_components.xiaomi_miot.core.device.zhimi.fan.za5] Fan: Unable to discover the device 192.168.100.95, mapping: {'fan.on': {'siid': 2, 'piid': 1}, 'fan.mode': {'siid': 2, 'piid': 7}, 'custom_service.speed_level': {'siid': 6, 'piid': 8}}, max_properties: 1/3
+2026-02-12 14:06:13.224 INFO (MainThread) [custom_components.xiaomi_miot.core.device.dmaker.fan.1c] Device updated: {'fan.horizontal_swing': False, 'switch.fan.horizontal_swing': False, 'number.fan.off_delay_time': 0, 'only_info': False}
+2026-02-12 14:06:16.253 INFO (MainThread) [custom_components.xiaomi_miot.core.device.zhimi.airp.rmb1] Device updated: {'fan.air_purifier.on': True, 'air_purifier.on': True, 'air_purifier.mode': 'Auto', 'only_info': False}
+2026-02-12 14:06:19.370 INFO (MainThread) [custom_components.xiaomi_miot.core.device.dmaker.fan.1c] Device updated: {'fan.fan.on': False, 'fan.on': False, 'fan.fan_level': '1', 'fan.mode': 'Straight Wind', 'only_info': False}
+2026-02-12 14:06:19.377 INFO (MainThread) [custom_components.xiaomi_miot.core.device.zhimi.fan.za5] Fan: Unable to discover the device 192.168.100.95, mapping: {'environment.relative_humidity': {'siid': 7, 'piid': 1}, 'environment.temperature': {'siid': 7, 'piid': 7}}, max_properties: 1/2
+2026-02-12 14:06:26.084 INFO (MainThread) [custom_components.xiaomi_miot.core.device.zhimi.airp.rmb1] Device updated: {'fan.air_purifier.on': True, 'air_purifier.on': True, 'air_purifier.mode': 'Auto', 'only_info': False}
+2026-02-12 14:06:27.328 INFO (MainThread) [custom_components.xiaomi_miot.core.device.soocare.toothbrush.m1s] Device updated: {'sensor.event': 'start', 'sensor.timestamp': '1970-01-01T08:00:00+08:00', 'only_info': False}
+2026-02-12 14:06:27.879 INFO (MainThread) [custom_components.xiaomi_miot.core.device.soocare.toothbrush.m1s] Device updated: {'only_info': False}
+2026-02-12 14:06:29.771 INFO (MainThread) [custom_components.xiaomi_miot.core.device.zhimi.airp.rmb1] Device updated: {'sensor.environment.relative_humidity': 78, 'sensor.environment.pm2_5_density': 5, 'sensor.environment.temperature': 26, 'switch.alarm': False, 'switch.physical_controls_locked': False, 'select.screen.brightness': 'Bright', 'custom_service.favorite_level': 14, 'number.custom_service.favorite_level': 14, 'only_info': False}
+2026-02-12 14:06:34.194 INFO (MainThread) [custom_components.xiaomi_miot.core.device.dmaker.fan.1c] Device updated: {'fan.horizontal_swing': False, 'switch.fan.horizontal_swing': False, 'number.fan.off_delay_time': 0, 'only_info': False}
+2026-02-12 14:06:35.394 INFO (MainThread) [custom_components.xiaomi_miot.core.device.dmaker.fan.1c] Device updated: {'fan.fan.on': False, 'fan.on': False, 'fan.fan_level': '1', 'fan.mode': 'Straight Wind', 'only_info': False}
+2026-02-12 14:06:38.347 INFO (Recorder) [homeassistant.components.recorder.pool.RecorderPool] Pool recreating

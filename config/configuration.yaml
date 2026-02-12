@@ -40,6 +40,22 @@ script: !include scripts.yaml
 # Scenes
 scene: !include scenes.yaml
 
+# Cameras - Tapo RTSP
+camera:
+  - platform: generic
+    name: "Camera 1"
+    still_image_url: !secret camera_1_stream
+    stream_source: !secret camera_1_stream
+    verify_ssl: false
+  - platform: generic
+    name: "Camera 2"
+    still_image_url: !secret camera_2_stream
+    stream_source: !secret camera_2_stream
+    verify_ssl: false
+
+# Go2RTC for better RTSP streaming
+stream:
+
 # REST API for external control (OpenClaw integration)
 api:
 
